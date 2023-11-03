@@ -1,0 +1,20 @@
+{
+  "name": "ibg-playwright-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests:ufm-1-be-regression": "env-cmd --environments $ENV playwright test --config=configs/ufm1be.config.ts --project=ufm1be",
+    "tests:ufm-2-be-regression": "env-cmd --environments $ENV playwright test --config=configs/ufm2be.config.ts --project=ufm2be"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.4"
+  },
+  "dependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}

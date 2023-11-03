@@ -1,0 +1,22 @@
+tools:
+  nodejs: 16.18.0
+  npm: 8.19.2
+
+flows:
+  default:
+    - echo "IBG Test Suite!"
+    - call: runAllTests
+  runAllTests:
+    try:
+      - npm install
+      - ENV=qa npm run tests:ufm-2-be-regression
+  runUFM2SMokeTes:
+    try:
+      - npm install
+      - ENV=qa npm run tests:ufm-2-be-regression
+    finally:
+      - publishReport:
+          context: playwright
+          dir: playwright-report
+          index: index.html
+          verbose: false

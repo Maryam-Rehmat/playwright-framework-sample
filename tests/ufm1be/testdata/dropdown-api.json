@@ -1,0 +1,1525 @@
+{
+    "endpoint": "/api/v1/generic-filter-dropdown-values",
+    "queryparams": {
+        "key": "cfg_code_id",
+        "values": "28,29"
+    },
+    "headers": {
+        "User-Id": "s0g0fhn",
+        "Wm_consumer.Id": "f9fb2c2a-b4b0-4e74-9819-d84d663a788f",
+        "Wm_svc.Env": "qa"
+    },
+    "expected_response": {
+        "drop_downs_values": [
+            {
+                "name": "channel_group",
+                "values": [
+                    {
+                        "key": "DELIVERY",
+                        "label": "DELIVERY"
+                    },
+                    {
+                        "key": "INSTORE_INCLUB",
+                        "label": "INSTORE_INCLUB"
+                    },
+                    {
+                        "key": "OTHER",
+                        "label": "OTHER"
+                    },
+                    {
+                        "key": "PICKUP",
+                        "label": "PICKUP"
+                    }
+                ],
+                "mappings": [
+                    {
+                        "value": "DELIVERY",
+                        "drop_downs_values": {
+                            "name": "channel",
+                            "values": [
+                                {
+                                    "key": "DSV_S2H",
+                                    "label": "DSV_S2H"
+                                },
+                                {
+                                    "key": "EXPRESS_DELIVERY",
+                                    "label": "EXPRESS_DELIVERY"
+                                },
+                                {
+                                    "key": "INHOME_DELIVERY",
+                                    "label": "INHOME_DELIVERY"
+                                },
+                                {
+                                    "key": "MARKETPLACE",
+                                    "label": "MARKETPLACE"
+                                },
+                                {
+                                    "key": "OWNED_S2H",
+                                    "label": "OWNED_S2H"
+                                },
+                                {
+                                    "key": "SCHEDULED_DELIVERY",
+                                    "label": "SCHEDULED_DELIVERY"
+                                },
+                                {
+                                    "key": "SHIP_FROM_STORE",
+                                    "label": "SHIP_FROM_STORE"
+                                },
+                                {
+                                    "key": "UNSCHEDULED_DELIVERY",
+                                    "label": "UNSCHEDULED_DELIVERY"
+                                },
+                                {
+                                    "key": "WALMART_FULFILLMENT_SERVICES",
+                                    "label": "WALMART_FULFILLMENT_SERVICES"
+                                },
+                                {
+                                    "key": "WMT_INSTACART",
+                                    "label": "WMT_INSTACART"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "INSTORE_INCLUB",
+                        "drop_downs_values": {
+                            "name": "channel",
+                            "values": [
+                                {
+                                    "key": "INSTORE_INCLUB",
+                                    "label": "INSTORE_INCLUB"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "OTHER",
+                        "drop_downs_values": {
+                            "name": "channel",
+                            "values": [
+                                {
+                                    "key": "CORE_SERVICES",
+                                    "label": "CORE_SERVICES"
+                                },
+                                {
+                                    "key": "MONETIZATION",
+                                    "label": "MONETIZATION"
+                                },
+                                {
+                                    "key": "THIRD_PARTY_WEBSITE",
+                                    "label": "THIRD_PARTY_WEBSITE"
+                                },
+                                {
+                                    "key": "WMT_ADVERTISING",
+                                    "label": "WMT_ADVERTISING"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "PICKUP",
+                        "drop_downs_values": {
+                            "name": "channel",
+                            "values": [
+                                {
+                                    "key": "DSV_S2S",
+                                    "label": "DSV_S2S"
+                                },
+                                {
+                                    "key": "EXPRESS_PICKUP",
+                                    "label": "EXPRESS_PICKUP"
+                                },
+                                {
+                                    "key": "OWNED_S2S",
+                                    "label": "OWNED_S2S"
+                                },
+                                {
+                                    "key": "SCHEDULED_PICKUP",
+                                    "label": "SCHEDULED_PICKUP"
+                                },
+                                {
+                                    "key": "UNSCHEDULED_PICKUP",
+                                    "label": "UNSCHEDULED_PICKUP"
+                                },
+                                {
+                                    "key": "WMT_PHARMACY_RX",
+                                    "label": "WMT_PHARMACY_RX"
+                                },
+                                {
+                                    "key": "WMT_PHOTO",
+                                    "label": "WMT_PHOTO"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "-1234567890",
+                        "drop_downs_values": {
+                            "name": "channel",
+                            "values": [
+                                {
+                                    "key": "DSV_S2H",
+                                    "label": "DSV_S2H"
+                                },
+                                {
+                                    "key": "EXPRESS_DELIVERY",
+                                    "label": "EXPRESS_DELIVERY"
+                                },
+                                {
+                                    "key": "INHOME_DELIVERY",
+                                    "label": "INHOME_DELIVERY"
+                                },
+                                {
+                                    "key": "MARKETPLACE",
+                                    "label": "MARKETPLACE"
+                                },
+                                {
+                                    "key": "OWNED_S2H",
+                                    "label": "OWNED_S2H"
+                                },
+                                {
+                                    "key": "SCHEDULED_DELIVERY",
+                                    "label": "SCHEDULED_DELIVERY"
+                                },
+                                {
+                                    "key": "SHIP_FROM_STORE",
+                                    "label": "SHIP_FROM_STORE"
+                                },
+                                {
+                                    "key": "UNSCHEDULED_DELIVERY",
+                                    "label": "UNSCHEDULED_DELIVERY"
+                                },
+                                {
+                                    "key": "WALMART_FULFILLMENT_SERVICES",
+                                    "label": "WALMART_FULFILLMENT_SERVICES"
+                                },
+                                {
+                                    "key": "WMT_INSTACART",
+                                    "label": "WMT_INSTACART"
+                                },
+                                {
+                                    "key": "INSTORE_INCLUB",
+                                    "label": "INSTORE_INCLUB"
+                                },
+                                {
+                                    "key": "CORE_SERVICES",
+                                    "label": "CORE_SERVICES"
+                                },
+                                {
+                                    "key": "MONETIZATION",
+                                    "label": "MONETIZATION"
+                                },
+                                {
+                                    "key": "THIRD_PARTY_WEBSITE",
+                                    "label": "THIRD_PARTY_WEBSITE"
+                                },
+                                {
+                                    "key": "WMT_ADVERTISING",
+                                    "label": "WMT_ADVERTISING"
+                                },
+                                {
+                                    "key": "DSV_S2S",
+                                    "label": "DSV_S2S"
+                                },
+                                {
+                                    "key": "EXPRESS_PICKUP",
+                                    "label": "EXPRESS_PICKUP"
+                                },
+                                {
+                                    "key": "OWNED_S2S",
+                                    "label": "OWNED_S2S"
+                                },
+                                {
+                                    "key": "SCHEDULED_PICKUP",
+                                    "label": "SCHEDULED_PICKUP"
+                                },
+                                {
+                                    "key": "UNSCHEDULED_PICKUP",
+                                    "label": "UNSCHEDULED_PICKUP"
+                                },
+                                {
+                                    "key": "WMT_PHARMACY_RX",
+                                    "label": "WMT_PHARMACY_RX"
+                                },
+                                {
+                                    "key": "WMT_PHOTO",
+                                    "label": "WMT_PHOTO"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "cascaded": "channel"
+            },
+            {
+                "name": "channel",
+                "values": [
+                    {
+                        "key": "CORE_SERVICES",
+                        "label": "CORE_SERVICES"
+                    },
+                    {
+                        "key": "DSV_S2H",
+                        "label": "DSV_S2H"
+                    },
+                    {
+                        "key": "DSV_S2S",
+                        "label": "DSV_S2S"
+                    },
+                    {
+                        "key": "EXPRESS_DELIVERY",
+                        "label": "EXPRESS_DELIVERY"
+                    },
+                    {
+                        "key": "EXPRESS_PICKUP",
+                        "label": "EXPRESS_PICKUP"
+                    },
+                    {
+                        "key": "INHOME_DELIVERY",
+                        "label": "INHOME_DELIVERY"
+                    },
+                    {
+                        "key": "INSTORE_INCLUB",
+                        "label": "INSTORE_INCLUB"
+                    },
+                    {
+                        "key": "MARKETPLACE",
+                        "label": "MARKETPLACE"
+                    },
+                    {
+                        "key": "MONETIZATION",
+                        "label": "MONETIZATION"
+                    },
+                    {
+                        "key": "OWNED_S2H",
+                        "label": "OWNED_S2H"
+                    },
+                    {
+                        "key": "OWNED_S2S",
+                        "label": "OWNED_S2S"
+                    },
+                    {
+                        "key": "SCHEDULED_DELIVERY",
+                        "label": "SCHEDULED_DELIVERY"
+                    },
+                    {
+                        "key": "SCHEDULED_PICKUP",
+                        "label": "SCHEDULED_PICKUP"
+                    },
+                    {
+                        "key": "SHIP_FROM_STORE",
+                        "label": "SHIP_FROM_STORE"
+                    },
+                    {
+                        "key": "THIRD_PARTY_WEBSITE",
+                        "label": "THIRD_PARTY_WEBSITE"
+                    },
+                    {
+                        "key": "UNSCHEDULED_DELIVERY",
+                        "label": "UNSCHEDULED_DELIVERY"
+                    },
+                    {
+                        "key": "UNSCHEDULED_PICKUP",
+                        "label": "UNSCHEDULED_PICKUP"
+                    },
+                    {
+                        "key": "WALMART_FULFILLMENT_SERVICES",
+                        "label": "WALMART_FULFILLMENT_SERVICES"
+                    },
+                    {
+                        "key": "WMT_ADVERTISING",
+                        "label": "WMT_ADVERTISING"
+                    },
+                    {
+                        "key": "WMT_INSTACART",
+                        "label": "WMT_INSTACART"
+                    },
+                    {
+                        "key": "WMT_PHARMACY_RX",
+                        "label": "WMT_PHARMACY_RX"
+                    },
+                    {
+                        "key": "WMT_PHOTO",
+                        "label": "WMT_PHOTO"
+                    }
+                ]
+            },
+            {
+                "name": "sbu",
+                "values": [
+                    {
+                        "key": "APPAREL",
+                        "label": "APPAREL"
+                    },
+                    {
+                        "key": "CONSUMABLES",
+                        "label": "CONSUMABLES"
+                    },
+                    {
+                        "key": "ENTERTAINMENT TOYS AND SEASONAL",
+                        "label": "ENTERTAINMENT TOYS AND SEASONAL"
+                    },
+                    {
+                        "key": "FOOD",
+                        "label": "FOOD"
+                    },
+                    {
+                        "key": "FUEL",
+                        "label": "FUEL"
+                    },
+                    {
+                        "key": "HARDLINES",
+                        "label": "HARDLINES"
+                    },
+                    {
+                        "key": "HEALTH AND WELLNESS",
+                        "label": "HEALTH AND WELLNESS"
+                    },
+                    {
+                        "key": "HOME",
+                        "label": "HOME"
+                    },
+                    {
+                        "key": "OTHER",
+                        "label": "OTHER"
+                    },
+                    {
+                        "key": "UNKNOWN",
+                        "label": "UNKNOWN"
+                    }
+                ],
+                "mappings": [
+                    {
+                        "value": "APPAREL",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": [
+                                {
+                                    "key": "23_MENS APPAREL",
+                                    "label": "23_MENS APPAREL"
+                                },
+                                {
+                                    "key": "24_BOYS APPAREL",
+                                    "label": "24_BOYS APPAREL"
+                                },
+                                {
+                                    "key": "25_SHOES",
+                                    "label": "25_SHOES"
+                                },
+                                {
+                                    "key": "26_INFANT APPAREL",
+                                    "label": "26_INFANT APPAREL"
+                                },
+                                {
+                                    "key": "27_FAMILY SOCKS",
+                                    "label": "27_FAMILY SOCKS"
+                                },
+                                {
+                                    "key": "28_HOSIERY",
+                                    "label": "28_HOSIERY"
+                                },
+                                {
+                                    "key": "29_INTIMATE APPAREL",
+                                    "label": "29_INTIMATE APPAREL"
+                                },
+                                {
+                                    "key": "30_FOUNDATIONS",
+                                    "label": "30_FOUNDATIONS"
+                                },
+                                {
+                                    "key": "31_ACCESSORIES",
+                                    "label": "31_ACCESSORIES"
+                                },
+                                {
+                                    "key": "32_JEWELRY",
+                                    "label": "32_JEWELRY"
+                                },
+                                {
+                                    "key": "33_GIRLS APPAREL",
+                                    "label": "33_GIRLS APPAREL"
+                                },
+                                {
+                                    "key": "34_WOMENS APPAREL",
+                                    "label": "34_WOMENS APPAREL"
+                                },
+                                {
+                                    "key": "35_PLUS SIZES/MATERNITY",
+                                    "label": "35_PLUS SIZES/MATERNITY"
+                                },
+                                {
+                                    "key": "36_WOMENS OUTERWEAR",
+                                    "label": "36_WOMENS OUTERWEAR"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "CONSUMABLES",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": [
+                                {
+                                    "key": "13_CLEANING",
+                                    "label": "13_CLEANING"
+                                },
+                                {
+                                    "key": "2_PERSONAL CARE",
+                                    "label": "2_PERSONAL CARE"
+                                },
+                                {
+                                    "key": "4_HOUSEHOLD PAPER",
+                                    "label": "4_HOUSEHOLD PAPER"
+                                },
+                                {
+                                    "key": "40_OTC PHARMACY",
+                                    "label": "40_OTC PHARMACY"
+                                },
+                                {
+                                    "key": "46_BEAUTY",
+                                    "label": "46_BEAUTY"
+                                },
+                                {
+                                    "key": "79_INFANT CONSUMABLE HARDLINES",
+                                    "label": "79_INFANT CONSUMABLE HARDLINES"
+                                },
+                                {
+                                    "key": "8_PETS & SUPPLIES",
+                                    "label": "8_PETS & SUPPLIES"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "ENTERTAINMENT TOYS AND SEASONAL",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": [
+                                {
+                                    "key": "18_SEASONAL",
+                                    "label": "18_SEASONAL"
+                                },
+                                {
+                                    "key": "21_BOOKS AND MAGAZINES",
+                                    "label": "21_BOOKS AND MAGAZINES"
+                                },
+                                {
+                                    "key": "5_MEDIA AND GAMING",
+                                    "label": "5_MEDIA AND GAMING"
+                                },
+                                {
+                                    "key": "58_WIRELESS SERVICE INC",
+                                    "label": "58_WIRELESS SERVICE INC"
+                                },
+                                {
+                                    "key": "6_CAMERAS & SUPPLIES",
+                                    "label": "6_CAMERAS & SUPPLIES"
+                                },
+                                {
+                                    "key": "67_CELEBRATION",
+                                    "label": "67_CELEBRATION"
+                                },
+                                {
+                                    "key": "7_TOYS",
+                                    "label": "7_TOYS"
+                                },
+                                {
+                                    "key": "72_ELECTRONICS",
+                                    "label": "72_ELECTRONICS"
+                                },
+                                {
+                                    "key": "77_LARGE HOUSEHOLD GOODS",
+                                    "label": "77_LARGE HOUSEHOLD GOODS"
+                                },
+                                {
+                                    "key": "85_ONE HOUR PHOTO",
+                                    "label": "85_ONE HOUR PHOTO"
+                                },
+                                {
+                                    "key": "87_WIRELESS",
+                                    "label": "87_WIRELESS"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "FOOD",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": [
+                                {
+                                    "key": "1_CANDY",
+                                    "label": "1_CANDY"
+                                },
+                                {
+                                    "key": "80_SERVICE DELI",
+                                    "label": "80_SERVICE DELI"
+                                },
+                                {
+                                    "key": "81_COM BREAD",
+                                    "label": "81_COM BREAD"
+                                },
+                                {
+                                    "key": "82_IMPULSE MERCHANDISE",
+                                    "label": "82_IMPULSE MERCHANDISE"
+                                },
+                                {
+                                    "key": "83_SEAFOOD",
+                                    "label": "83_SEAFOOD"
+                                },
+                                {
+                                    "key": "84_BALLOONS & FLOWERS",
+                                    "label": "84_BALLOONS & FLOWERS"
+                                },
+                                {
+                                    "key": "90_DAIRY",
+                                    "label": "90_DAIRY"
+                                },
+                                {
+                                    "key": "91_FROZEN",
+                                    "label": "91_FROZEN"
+                                },
+                                {
+                                    "key": "92_GROCERY",
+                                    "label": "92_GROCERY"
+                                },
+                                {
+                                    "key": "93_MEAT",
+                                    "label": "93_MEAT"
+                                },
+                                {
+                                    "key": "94_PRODUCE",
+                                    "label": "94_PRODUCE"
+                                },
+                                {
+                                    "key": "95_DSD GROCERY",
+                                    "label": "95_DSD GROCERY"
+                                },
+                                {
+                                    "key": "96_LIQUOR",
+                                    "label": "96_LIQUOR"
+                                },
+                                {
+                                    "key": "97_WALL DELI",
+                                    "label": "97_WALL DELI"
+                                },
+                                {
+                                    "key": "98_BAKERY",
+                                    "label": "98_BAKERY"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "FUEL",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": [
+                                {
+                                    "key": "65_GASOLINE",
+                                    "label": "65_GASOLINE"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "HARDLINES",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": [
+                                {
+                                    "key": "10_AUTOMOTIVE",
+                                    "label": "10_AUTOMOTIVE"
+                                },
+                                {
+                                    "key": "11_HARDWARE",
+                                    "label": "11_HARDWARE"
+                                },
+                                {
+                                    "key": "12_PAINT & ACCESSORIES",
+                                    "label": "12_PAINT & ACCESSORIES"
+                                },
+                                {
+                                    "key": "16_LAWN AND GARDEN",
+                                    "label": "16_LAWN AND GARDEN"
+                                },
+                                {
+                                    "key": "3_STATIONERY",
+                                    "label": "3_STATIONERY"
+                                },
+                                {
+                                    "key": "37_AUTO SERVICE",
+                                    "label": "37_AUTO SERVICE"
+                                },
+                                {
+                                    "key": "56_HORTICULTURE",
+                                    "label": "56_HORTICULTURE"
+                                },
+                                {
+                                    "key": "9_SPORTING GOODS",
+                                    "label": "9_SPORTING GOODS"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "HEALTH AND WELLNESS",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": [
+                                {
+                                    "key": "15_HEALTH AND WELLNESS CLINICS",
+                                    "label": "15_HEALTH AND WELLNESS CLINICS"
+                                },
+                                {
+                                    "key": "38_PHARMACY RX",
+                                    "label": "38_PHARMACY RX"
+                                },
+                                {
+                                    "key": "49_OPTICAL",
+                                    "label": "49_OPTICAL"
+                                },
+                                {
+                                    "key": "50_OPTICAL",
+                                    "label": "50_OPTICAL"
+                                },
+                                {
+                                    "key": "57_HEARING CENTER",
+                                    "label": "57_HEARING CENTER"
+                                },
+                                {
+                                    "key": "75_OPTICAL - DOCTORS",
+                                    "label": "75_OPTICAL - DOCTORS"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "HOME",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": [
+                                {
+                                    "key": "14_COOK AND DINE",
+                                    "label": "14_COOK AND DINE"
+                                },
+                                {
+                                    "key": "17_HOME DECOR",
+                                    "label": "17_HOME DECOR"
+                                },
+                                {
+                                    "key": "19_ARTS, CRAFTS, SEWING & FABRICS",
+                                    "label": "19_ARTS, CRAFTS, SEWING & FABRICS"
+                                },
+                                {
+                                    "key": "20_BATH AND SHOWER",
+                                    "label": "20_BATH AND SHOWER"
+                                },
+                                {
+                                    "key": "22_BEDDING",
+                                    "label": "22_BEDDING"
+                                },
+                                {
+                                    "key": "71_FURNITURE",
+                                    "label": "71_FURNITURE"
+                                },
+                                {
+                                    "key": "74_HOME MANAGEMENT",
+                                    "label": "74_HOME MANAGEMENT"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "OTHER",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": [
+                                {
+                                    "key": "-999_UNKNOWN",
+                                    "label": "-999_UNKNOWN"
+                                },
+                                {
+                                    "key": "39_CONSUMER SERVICES",
+                                    "label": "39_CONSUMER SERVICES"
+                                },
+                                {
+                                    "key": "60_STAMPS",
+                                    "label": "60_STAMPS"
+                                },
+                                {
+                                    "key": "61_SAMS",
+                                    "label": "61_SAMS"
+                                },
+                                {
+                                    "key": "62_SAMS",
+                                    "label": "62_SAMS"
+                                },
+                                {
+                                    "key": "63_SAMS",
+                                    "label": "63_SAMS"
+                                },
+                                {
+                                    "key": "64_SAMS",
+                                    "label": "64_SAMS"
+                                },
+                                {
+                                    "key": "66_WALMART-ENERGY",
+                                    "label": "66_WALMART-ENERGY"
+                                },
+                                {
+                                    "key": "68_SAMS",
+                                    "label": "68_SAMS"
+                                },
+                                {
+                                    "key": "69_WAL-MART ONLINE",
+                                    "label": "69_WAL-MART ONLINE"
+                                },
+                                {
+                                    "key": "70_STORE USE ONLY",
+                                    "label": "70_STORE USE ONLY"
+                                },
+                                {
+                                    "key": "76_ACADEMY",
+                                    "label": "76_ACADEMY"
+                                },
+                                {
+                                    "key": "86_WALMART SERVICES",
+                                    "label": "86_WALMART SERVICES"
+                                },
+                                {
+                                    "key": "88_PMDCSIGNINIG",
+                                    "label": "88_PMDCSIGNINIG"
+                                },
+                                {
+                                    "key": "89_TRAVEL",
+                                    "label": "89_TRAVEL"
+                                },
+                                {
+                                    "key": "99_OFFICE & STORE",
+                                    "label": "99_OFFICE & STORE"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "value": "UNKNOWN",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": []
+                        }
+                    },
+                    {
+                        "value": "-1234567890",
+                        "drop_downs_values": {
+                            "name": "department",
+                            "values": [
+                                {
+                                    "key": "0_UNKNOWN",
+                                    "label": "0_UNKNOWN"
+                                },
+                                {
+                                    "key": "901_UNKNOWN",
+                                    "label": "901_UNKNOWN"
+                                },
+                                {
+                                    "key": "23_MENS APPAREL",
+                                    "label": "23_MENS APPAREL"
+                                },
+                                {
+                                    "key": "24_BOYS APPAREL",
+                                    "label": "24_BOYS APPAREL"
+                                },
+                                {
+                                    "key": "25_SHOES",
+                                    "label": "25_SHOES"
+                                },
+                                {
+                                    "key": "26_INFANT APPAREL",
+                                    "label": "26_INFANT APPAREL"
+                                },
+                                {
+                                    "key": "27_FAMILY SOCKS",
+                                    "label": "27_FAMILY SOCKS"
+                                },
+                                {
+                                    "key": "28_HOSIERY",
+                                    "label": "28_HOSIERY"
+                                },
+                                {
+                                    "key": "29_INTIMATE APPAREL",
+                                    "label": "29_INTIMATE APPAREL"
+                                },
+                                {
+                                    "key": "30_FOUNDATIONS",
+                                    "label": "30_FOUNDATIONS"
+                                },
+                                {
+                                    "key": "31_ACCESSORIES",
+                                    "label": "31_ACCESSORIES"
+                                },
+                                {
+                                    "key": "32_JEWELRY",
+                                    "label": "32_JEWELRY"
+                                },
+                                {
+                                    "key": "33_GIRLS APPAREL",
+                                    "label": "33_GIRLS APPAREL"
+                                },
+                                {
+                                    "key": "34_WOMENS APPAREL",
+                                    "label": "34_WOMENS APPAREL"
+                                },
+                                {
+                                    "key": "35_PLUS SIZES/MATERNITY",
+                                    "label": "35_PLUS SIZES/MATERNITY"
+                                },
+                                {
+                                    "key": "36_WOMENS OUTERWEAR",
+                                    "label": "36_WOMENS OUTERWEAR"
+                                },
+                                {
+                                    "key": "13_CLEANING",
+                                    "label": "13_CLEANING"
+                                },
+                                {
+                                    "key": "2_PERSONAL CARE",
+                                    "label": "2_PERSONAL CARE"
+                                },
+                                {
+                                    "key": "4_HOUSEHOLD PAPER",
+                                    "label": "4_HOUSEHOLD PAPER"
+                                },
+                                {
+                                    "key": "40_OTC PHARMACY",
+                                    "label": "40_OTC PHARMACY"
+                                },
+                                {
+                                    "key": "46_BEAUTY",
+                                    "label": "46_BEAUTY"
+                                },
+                                {
+                                    "key": "79_INFANT CONSUMABLE HARDLINES",
+                                    "label": "79_INFANT CONSUMABLE HARDLINES"
+                                },
+                                {
+                                    "key": "8_PETS & SUPPLIES",
+                                    "label": "8_PETS & SUPPLIES"
+                                },
+                                {
+                                    "key": "18_SEASONAL",
+                                    "label": "18_SEASONAL"
+                                },
+                                {
+                                    "key": "21_BOOKS AND MAGAZINES",
+                                    "label": "21_BOOKS AND MAGAZINES"
+                                },
+                                {
+                                    "key": "5_MEDIA AND GAMING",
+                                    "label": "5_MEDIA AND GAMING"
+                                },
+                                {
+                                    "key": "58_WIRELESS SERVICE INC",
+                                    "label": "58_WIRELESS SERVICE INC"
+                                },
+                                {
+                                    "key": "6_CAMERAS & SUPPLIES",
+                                    "label": "6_CAMERAS & SUPPLIES"
+                                },
+                                {
+                                    "key": "67_CELEBRATION",
+                                    "label": "67_CELEBRATION"
+                                },
+                                {
+                                    "key": "7_TOYS",
+                                    "label": "7_TOYS"
+                                },
+                                {
+                                    "key": "72_ELECTRONICS",
+                                    "label": "72_ELECTRONICS"
+                                },
+                                {
+                                    "key": "77_LARGE HOUSEHOLD GOODS",
+                                    "label": "77_LARGE HOUSEHOLD GOODS"
+                                },
+                                {
+                                    "key": "85_ONE HOUR PHOTO",
+                                    "label": "85_ONE HOUR PHOTO"
+                                },
+                                {
+                                    "key": "87_WIRELESS",
+                                    "label": "87_WIRELESS"
+                                },
+                                {
+                                    "key": "1_CANDY",
+                                    "label": "1_CANDY"
+                                },
+                                {
+                                    "key": "80_SERVICE DELI",
+                                    "label": "80_SERVICE DELI"
+                                },
+                                {
+                                    "key": "81_COM BREAD",
+                                    "label": "81_COM BREAD"
+                                },
+                                {
+                                    "key": "82_IMPULSE MERCHANDISE",
+                                    "label": "82_IMPULSE MERCHANDISE"
+                                },
+                                {
+                                    "key": "83_SEAFOOD",
+                                    "label": "83_SEAFOOD"
+                                },
+                                {
+                                    "key": "84_BALLOONS & FLOWERS",
+                                    "label": "84_BALLOONS & FLOWERS"
+                                },
+                                {
+                                    "key": "90_DAIRY",
+                                    "label": "90_DAIRY"
+                                },
+                                {
+                                    "key": "91_FROZEN",
+                                    "label": "91_FROZEN"
+                                },
+                                {
+                                    "key": "92_GROCERY",
+                                    "label": "92_GROCERY"
+                                },
+                                {
+                                    "key": "93_MEAT",
+                                    "label": "93_MEAT"
+                                },
+                                {
+                                    "key": "94_PRODUCE",
+                                    "label": "94_PRODUCE"
+                                },
+                                {
+                                    "key": "95_DSD GROCERY",
+                                    "label": "95_DSD GROCERY"
+                                },
+                                {
+                                    "key": "96_LIQUOR",
+                                    "label": "96_LIQUOR"
+                                },
+                                {
+                                    "key": "97_WALL DELI",
+                                    "label": "97_WALL DELI"
+                                },
+                                {
+                                    "key": "98_BAKERY",
+                                    "label": "98_BAKERY"
+                                },
+                                {
+                                    "key": "65_GASOLINE",
+                                    "label": "65_GASOLINE"
+                                },
+                                {
+                                    "key": "10_AUTOMOTIVE",
+                                    "label": "10_AUTOMOTIVE"
+                                },
+                                {
+                                    "key": "11_HARDWARE",
+                                    "label": "11_HARDWARE"
+                                },
+                                {
+                                    "key": "12_PAINT & ACCESSORIES",
+                                    "label": "12_PAINT & ACCESSORIES"
+                                },
+                                {
+                                    "key": "16_LAWN AND GARDEN",
+                                    "label": "16_LAWN AND GARDEN"
+                                },
+                                {
+                                    "key": "3_STATIONERY",
+                                    "label": "3_STATIONERY"
+                                },
+                                {
+                                    "key": "37_AUTO SERVICE",
+                                    "label": "37_AUTO SERVICE"
+                                },
+                                {
+                                    "key": "56_HORTICULTURE",
+                                    "label": "56_HORTICULTURE"
+                                },
+                                {
+                                    "key": "9_SPORTING GOODS",
+                                    "label": "9_SPORTING GOODS"
+                                },
+                                {
+                                    "key": "15_HEALTH AND WELLNESS CLINICS",
+                                    "label": "15_HEALTH AND WELLNESS CLINICS"
+                                },
+                                {
+                                    "key": "38_PHARMACY RX",
+                                    "label": "38_PHARMACY RX"
+                                },
+                                {
+                                    "key": "49_OPTICAL",
+                                    "label": "49_OPTICAL"
+                                },
+                                {
+                                    "key": "50_OPTICAL",
+                                    "label": "50_OPTICAL"
+                                },
+                                {
+                                    "key": "57_HEARING CENTER",
+                                    "label": "57_HEARING CENTER"
+                                },
+                                {
+                                    "key": "75_OPTICAL - DOCTORS",
+                                    "label": "75_OPTICAL - DOCTORS"
+                                },
+                                {
+                                    "key": "14_COOK AND DINE",
+                                    "label": "14_COOK AND DINE"
+                                },
+                                {
+                                    "key": "17_HOME DECOR",
+                                    "label": "17_HOME DECOR"
+                                },
+                                {
+                                    "key": "19_ARTS, CRAFTS, SEWING & FABRICS",
+                                    "label": "19_ARTS, CRAFTS, SEWING & FABRICS"
+                                },
+                                {
+                                    "key": "20_BATH AND SHOWER",
+                                    "label": "20_BATH AND SHOWER"
+                                },
+                                {
+                                    "key": "22_BEDDING",
+                                    "label": "22_BEDDING"
+                                },
+                                {
+                                    "key": "71_FURNITURE",
+                                    "label": "71_FURNITURE"
+                                },
+                                {
+                                    "key": "74_HOME MANAGEMENT",
+                                    "label": "74_HOME MANAGEMENT"
+                                },
+                                {
+                                    "key": "-999_UNKNOWN",
+                                    "label": "-999_UNKNOWN"
+                                },
+                                {
+                                    "key": "39_CONSUMER SERVICES",
+                                    "label": "39_CONSUMER SERVICES"
+                                },
+                                {
+                                    "key": "60_STAMPS",
+                                    "label": "60_STAMPS"
+                                },
+                                {
+                                    "key": "61_SAMS",
+                                    "label": "61_SAMS"
+                                },
+                                {
+                                    "key": "62_SAMS",
+                                    "label": "62_SAMS"
+                                },
+                                {
+                                    "key": "63_SAMS",
+                                    "label": "63_SAMS"
+                                },
+                                {
+                                    "key": "64_SAMS",
+                                    "label": "64_SAMS"
+                                },
+                                {
+                                    "key": "66_WALMART-ENERGY",
+                                    "label": "66_WALMART-ENERGY"
+                                },
+                                {
+                                    "key": "68_SAMS",
+                                    "label": "68_SAMS"
+                                },
+                                {
+                                    "key": "69_WAL-MART ONLINE",
+                                    "label": "69_WAL-MART ONLINE"
+                                },
+                                {
+                                    "key": "70_STORE USE ONLY",
+                                    "label": "70_STORE USE ONLY"
+                                },
+                                {
+                                    "key": "76_ACADEMY",
+                                    "label": "76_ACADEMY"
+                                },
+                                {
+                                    "key": "86_WALMART SERVICES",
+                                    "label": "86_WALMART SERVICES"
+                                },
+                                {
+                                    "key": "88_PMDCSIGNINIG",
+                                    "label": "88_PMDCSIGNINIG"
+                                },
+                                {
+                                    "key": "89_TRAVEL",
+                                    "label": "89_TRAVEL"
+                                },
+                                {
+                                    "key": "99_OFFICE & STORE",
+                                    "label": "99_OFFICE & STORE"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "cascaded": "department"
+            },
+            {
+                "name": "department",
+                "values": [
+                    {
+                        "key": "-999_UNKNOWN",
+                        "label": "-999_UNKNOWN"
+                    },
+                    {
+                        "key": "0_UNKNOWN",
+                        "label": "0_UNKNOWN"
+                    },
+                    {
+                        "key": "1_CANDY",
+                        "label": "1_CANDY"
+                    },
+                    {
+                        "key": "2_PERSONAL CARE",
+                        "label": "2_PERSONAL CARE"
+                    },
+                    {
+                        "key": "3_STATIONERY",
+                        "label": "3_STATIONERY"
+                    },
+                    {
+                        "key": "4_HOUSEHOLD PAPER",
+                        "label": "4_HOUSEHOLD PAPER"
+                    },
+                    {
+                        "key": "5_MEDIA AND GAMING",
+                        "label": "5_MEDIA AND GAMING"
+                    },
+                    {
+                        "key": "6_CAMERAS & SUPPLIES",
+                        "label": "6_CAMERAS & SUPPLIES"
+                    },
+                    {
+                        "key": "7_TOYS",
+                        "label": "7_TOYS"
+                    },
+                    {
+                        "key": "8_PETS & SUPPLIES",
+                        "label": "8_PETS & SUPPLIES"
+                    },
+                    {
+                        "key": "9_SPORTING GOODS",
+                        "label": "9_SPORTING GOODS"
+                    },
+                    {
+                        "key": "10_AUTOMOTIVE",
+                        "label": "10_AUTOMOTIVE"
+                    },
+                    {
+                        "key": "11_HARDWARE",
+                        "label": "11_HARDWARE"
+                    },
+                    {
+                        "key": "12_PAINT & ACCESSORIES",
+                        "label": "12_PAINT & ACCESSORIES"
+                    },
+                    {
+                        "key": "13_CLEANING",
+                        "label": "13_CLEANING"
+                    },
+                    {
+                        "key": "14_COOK AND DINE",
+                        "label": "14_COOK AND DINE"
+                    },
+                    {
+                        "key": "15_HEALTH AND WELLNESS CLINICS",
+                        "label": "15_HEALTH AND WELLNESS CLINICS"
+                    },
+                    {
+                        "key": "16_LAWN AND GARDEN",
+                        "label": "16_LAWN AND GARDEN"
+                    },
+                    {
+                        "key": "17_HOME DECOR",
+                        "label": "17_HOME DECOR"
+                    },
+                    {
+                        "key": "18_SEASONAL",
+                        "label": "18_SEASONAL"
+                    },
+                    {
+                        "key": "19_ARTS, CRAFTS, SEWING & FABRICS",
+                        "label": "19_ARTS, CRAFTS, SEWING & FABRICS"
+                    },
+                    {
+                        "key": "20_BATH AND SHOWER",
+                        "label": "20_BATH AND SHOWER"
+                    },
+                    {
+                        "key": "21_BOOKS AND MAGAZINES",
+                        "label": "21_BOOKS AND MAGAZINES"
+                    },
+                    {
+                        "key": "22_BEDDING",
+                        "label": "22_BEDDING"
+                    },
+                    {
+                        "key": "23_MENS APPAREL",
+                        "label": "23_MENS APPAREL"
+                    },
+                    {
+                        "key": "24_BOYS APPAREL",
+                        "label": "24_BOYS APPAREL"
+                    },
+                    {
+                        "key": "25_SHOES",
+                        "label": "25_SHOES"
+                    },
+                    {
+                        "key": "26_INFANT APPAREL",
+                        "label": "26_INFANT APPAREL"
+                    },
+                    {
+                        "key": "27_FAMILY SOCKS",
+                        "label": "27_FAMILY SOCKS"
+                    },
+                    {
+                        "key": "28_HOSIERY",
+                        "label": "28_HOSIERY"
+                    },
+                    {
+                        "key": "29_INTIMATE APPAREL",
+                        "label": "29_INTIMATE APPAREL"
+                    },
+                    {
+                        "key": "30_FOUNDATIONS",
+                        "label": "30_FOUNDATIONS"
+                    },
+                    {
+                        "key": "31_ACCESSORIES",
+                        "label": "31_ACCESSORIES"
+                    },
+                    {
+                        "key": "32_JEWELRY",
+                        "label": "32_JEWELRY"
+                    },
+                    {
+                        "key": "33_GIRLS APPAREL",
+                        "label": "33_GIRLS APPAREL"
+                    },
+                    {
+                        "key": "34_WOMENS APPAREL",
+                        "label": "34_WOMENS APPAREL"
+                    },
+                    {
+                        "key": "35_PLUS SIZES/MATERNITY",
+                        "label": "35_PLUS SIZES/MATERNITY"
+                    },
+                    {
+                        "key": "36_WOMENS OUTERWEAR",
+                        "label": "36_WOMENS OUTERWEAR"
+                    },
+                    {
+                        "key": "37_AUTO SERVICE",
+                        "label": "37_AUTO SERVICE"
+                    },
+                    {
+                        "key": "38_PHARMACY RX",
+                        "label": "38_PHARMACY RX"
+                    },
+                    {
+                        "key": "39_CONSUMER SERVICES",
+                        "label": "39_CONSUMER SERVICES"
+                    },
+                    {
+                        "key": "40_OTC PHARMACY",
+                        "label": "40_OTC PHARMACY"
+                    },
+                    {
+                        "key": "46_BEAUTY",
+                        "label": "46_BEAUTY"
+                    },
+                    {
+                        "key": "49_OPTICAL",
+                        "label": "49_OPTICAL"
+                    },
+                    {
+                        "key": "50_OPTICAL",
+                        "label": "50_OPTICAL"
+                    },
+                    {
+                        "key": "56_HORTICULTURE",
+                        "label": "56_HORTICULTURE"
+                    },
+                    {
+                        "key": "57_HEARING CENTER",
+                        "label": "57_HEARING CENTER"
+                    },
+                    {
+                        "key": "58_WIRELESS SERVICE INC",
+                        "label": "58_WIRELESS SERVICE INC"
+                    },
+                    {
+                        "key": "60_STAMPS",
+                        "label": "60_STAMPS"
+                    },
+                    {
+                        "key": "61_SAMS",
+                        "label": "61_SAMS"
+                    },
+                    {
+                        "key": "62_SAMS",
+                        "label": "62_SAMS"
+                    },
+                    {
+                        "key": "63_SAMS",
+                        "label": "63_SAMS"
+                    },
+                    {
+                        "key": "64_SAMS",
+                        "label": "64_SAMS"
+                    },
+                    {
+                        "key": "65_GASOLINE",
+                        "label": "65_GASOLINE"
+                    },
+                    {
+                        "key": "66_WALMART-ENERGY",
+                        "label": "66_WALMART-ENERGY"
+                    },
+                    {
+                        "key": "67_CELEBRATION",
+                        "label": "67_CELEBRATION"
+                    },
+                    {
+                        "key": "68_SAMS",
+                        "label": "68_SAMS"
+                    },
+                    {
+                        "key": "69_WAL-MART ONLINE",
+                        "label": "69_WAL-MART ONLINE"
+                    },
+                    {
+                        "key": "70_STORE USE ONLY",
+                        "label": "70_STORE USE ONLY"
+                    },
+                    {
+                        "key": "71_FURNITURE",
+                        "label": "71_FURNITURE"
+                    },
+                    {
+                        "key": "72_ELECTRONICS",
+                        "label": "72_ELECTRONICS"
+                    },
+                    {
+                        "key": "74_HOME MANAGEMENT",
+                        "label": "74_HOME MANAGEMENT"
+                    },
+                    {
+                        "key": "75_OPTICAL - DOCTORS",
+                        "label": "75_OPTICAL - DOCTORS"
+                    },
+                    {
+                        "key": "76_ACADEMY",
+                        "label": "76_ACADEMY"
+                    },
+                    {
+                        "key": "77_LARGE HOUSEHOLD GOODS",
+                        "label": "77_LARGE HOUSEHOLD GOODS"
+                    },
+                    {
+                        "key": "79_INFANT CONSUMABLE HARDLINES",
+                        "label": "79_INFANT CONSUMABLE HARDLINES"
+                    },
+                    {
+                        "key": "80_SERVICE DELI",
+                        "label": "80_SERVICE DELI"
+                    },
+                    {
+                        "key": "81_COM BREAD",
+                        "label": "81_COM BREAD"
+                    },
+                    {
+                        "key": "82_IMPULSE MERCHANDISE",
+                        "label": "82_IMPULSE MERCHANDISE"
+                    },
+                    {
+                        "key": "83_SEAFOOD",
+                        "label": "83_SEAFOOD"
+                    },
+                    {
+                        "key": "84_BALLOONS & FLOWERS",
+                        "label": "84_BALLOONS & FLOWERS"
+                    },
+                    {
+                        "key": "85_ONE HOUR PHOTO",
+                        "label": "85_ONE HOUR PHOTO"
+                    },
+                    {
+                        "key": "86_WALMART SERVICES",
+                        "label": "86_WALMART SERVICES"
+                    },
+                    {
+                        "key": "87_WIRELESS",
+                        "label": "87_WIRELESS"
+                    },
+                    {
+                        "key": "88_PMDCSIGNINIG",
+                        "label": "88_PMDCSIGNINIG"
+                    },
+                    {
+                        "key": "89_TRAVEL",
+                        "label": "89_TRAVEL"
+                    },
+                    {
+                        "key": "90_DAIRY",
+                        "label": "90_DAIRY"
+                    },
+                    {
+                        "key": "91_FROZEN",
+                        "label": "91_FROZEN"
+                    },
+                    {
+                        "key": "92_GROCERY",
+                        "label": "92_GROCERY"
+                    },
+                    {
+                        "key": "93_MEAT",
+                        "label": "93_MEAT"
+                    },
+                    {
+                        "key": "94_PRODUCE",
+                        "label": "94_PRODUCE"
+                    },
+                    {
+                        "key": "95_DSD GROCERY",
+                        "label": "95_DSD GROCERY"
+                    },
+                    {
+                        "key": "96_LIQUOR",
+                        "label": "96_LIQUOR"
+                    },
+                    {
+                        "key": "97_WALL DELI",
+                        "label": "97_WALL DELI"
+                    },
+                    {
+                        "key": "98_BAKERY",
+                        "label": "98_BAKERY"
+                    },
+                    {
+                        "key": "99_OFFICE & STORE",
+                        "label": "99_OFFICE & STORE"
+                    },
+                    {
+                        "key": "901_UNKNOWN",
+                        "label": "901_UNKNOWN"
+                    }
+                ]
+            }
+        ]
+    }
+}
