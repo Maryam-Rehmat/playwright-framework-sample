@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tests:ufm-1-be-regression": "env-cmd --environments $ENV playwright test --config=configs/ufm1be.config.ts --project=ufm1be",
-    "tests:ufm-2-be-regression": "env-cmd --environments $ENV playwright test --config=configs/ufm2be.config.ts --project=ufm2be"
+    "tests:ufm-tests": "env-cmd --environments $ENV env-cmd --environments $TEST playwright test --config=configs/ufm.config.ts --project=ufm-be --project=ufm-fe",
+    "tests:ufm-tests-be": "env-cmd --environments $ENV env-cmd --environments $TEST playwright test --config=configs/ufm.config.ts --project=ufm-be"
   },
   "keywords": [],
   "author": "",
