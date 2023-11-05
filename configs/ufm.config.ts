@@ -10,7 +10,7 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: '../tests/ufm1be/',
+  testDir: '../tests/',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -37,9 +37,16 @@ export default defineConfig({
       testMatch: /auth-setup\.ts/,
     },
     {
-      name: 'ufm1be',
+      name: 'ufm-be',
       dependencies: ['setup'],
-      grep:[new RegExp("@regression")],
+      testMatch: /ufm-be/,
+      grep:[new RegExp(process.env.tag)],
+    },
+    {
+      name: 'ufm-fe',
+      dependencies: ['setup'],
+      testMatch: /ufm-fe/,
+      grep:[new RegExp(process.env.tag)],
       use: { ...devices['Desktop Chrome'], },
     }
     //,
