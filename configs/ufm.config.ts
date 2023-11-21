@@ -40,13 +40,13 @@ export default defineConfig({
       name: 'ufm-be',
       dependencies: ['setup'],
       testMatch: /ufm-be/,
-      grep:[new RegExp(process.env.tag)],
+      grep:[new RegExp(process.env.tag+"")],
     },
     {
       name: 'ufm-fe',
       dependencies: ['setup'],
       testMatch: /ufm-fe/,
-      grep:[new RegExp(process.env.tag)],
+      grep:[new RegExp(process.env.tag+"")],
       use: { ...devices['Desktop Chrome'], },
     }
     //,
