@@ -3,18 +3,22 @@ configuration:
     - mvn://com.walmartlabs.concord.plugins:looper-task:1.60.1
     - mvn://com.walmartlabs.concord.plugins:git:1.20.0
 flows:
-  default:
-    - log: "Build started for IBG BDD automation concord flow"
+  buildLooperJob:
+    - log: "Build started for IBG Playwright automation concord flow"
+    - log: "Running for App: ${app}"
     - task: looper
       in:
         action: buildJob
-        baseUrl: "https://ci.falcon.walmart.com/"
+        call: concord-triggered-flow
+        baseUrl: "https://ci.falcon.walmart.com"
         username: "s0g0fhn"
-        apiToken: ${crypto.decryptString("mpkkL66loQBweli/Hz9SrKB29HVAi7FUMa2pq/FAgTL+EQsUkmDCz18iTLrsx9bF")}
-        jobName: "IBG-BDD-Automation"
-        scmUrl: https://gecgithub01.walmart.com/IBG/ibg-test-scripts-bdd.git
+        apiToken: ${crypto.decryptString("NPqR068W1ldtNL/FdHUW1HznxFD8u2YRHzQ6HlLENwtse2WUumH9fOwPTRY5D9b9")}
+        jobName: "IBG-Playwright-Automation"
+        scmUrl: https://gecgithub01.walmart.com/IBG/ibg-testscripts-playwright.git
         looperYaml: ".looper.yml"
-        branch: "master-playwright"
+        branch: "main"
         suspend: true
         sync: true
+        parameters:
+          app: ${app}
     - log: "Looper Job completed"

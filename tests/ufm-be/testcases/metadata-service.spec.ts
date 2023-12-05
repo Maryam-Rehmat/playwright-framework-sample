@@ -10,8 +10,9 @@ test.describe('Validating the metadata service',()=>{
      const headersdata = {
        "Authorization":`Bearer ${token}`
      }
-     console.log(`${apiBaseURLUFM}${testdata.endpoint}`);
-     const responseData=await request.get(`${apiBaseURLUFM}${testdata.endpoint}`,{
+     const endpointURL=`${apiBaseURLUFM}${testdata.endpoint}`;
+     console.log(endpointURL);
+     const responseData=await request.get(endpointURL,{
        headers:headersdata  
      })
      const responseBody = JSON.parse(await responseData.text());
@@ -19,23 +20,25 @@ test.describe('Validating the metadata service',()=>{
    
    });
 
-   testdatafile.dimensionEndpoint.forEach(testdata => {
-    test('Checking the dimension response for '+testdata.name+' @Regresion @Smoke @getdimensionconfig', async ({request }) => {
+  //  commented out the following testcase as the API was deprecated
+  //  testdatafile.dimensionEndpoint.forEach(testdata => {
+  //   test('Checking the dimension response for '+testdata.name+' @Regresion @Smoke @getdimensionconfig', async ({request }) => {
      
-      const { token,apiBaseURLUFM} = process.env;
-      const headersdata = {
-        "Authorization":`Bearer ${token}`
-      }
-      console.log(`${apiBaseURLUFM}${testdata.endpoint}`);
-      const responseData=await request.post(`${apiBaseURLUFM}${testdata.endpoint}`,{
-        headers:headersdata,  
-        data:testdata.payload
-      })
-      const responseBody = JSON.parse(await responseData.text());
-      expect(responseBody).toMatchObject(testdata.expected_response);
+  //     const { token,apiBaseURLUFM} = process.env;
+  //     const headersdata = {
+  //       "Authorization":`Bearer ${token}`
+  //     }
+  //     const endpointURL=`${apiBaseURLUFM}${testdata.endpoint}`;
+  //     console.log(endpointURL);
+  //     const responseData=await request.post(endpointURL,{
+  //       headers:headersdata,  
+  //       data:testdata.payload
+  //     })
+  //     const responseBody = JSON.parse(await responseData.text());
+  //     expect(responseBody).toMatchObject(testdata.expected_response);
     
-    });
-   })
+  //   });
+  //  })
    
    
 })

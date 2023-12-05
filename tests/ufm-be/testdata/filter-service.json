@@ -1,0 +1,19 @@
+{
+    "endpoint":"/filter/",
+    "filter_selection": {
+        "filter_name": "filter_automation_test",
+        "filter_type": 3,
+        "screen_id": 201,
+        "filters": [
+            {
+                "channel": [
+                    312,
+                    314
+                ],
+                "channel_group":[403],
+                "sbu":[209,203],
+                "department":[4,5,6,7,8]
+            }
+        ]
+    }
+}

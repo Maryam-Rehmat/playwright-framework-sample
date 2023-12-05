@@ -18,15 +18,4 @@ test('dropdowms API ', async ({request }) => {
 
 });
 
-test('test 1 @smoke @regression',async({request})=>{
-  console.log("Smokea and regression testing")
-})
-
-test('test 2 @regression',async({request})=>{
-  console.log("regression testing")
-})
-
-test('test 3 @smoke',async({request})=>{
-  console.log("Smoke testing")
-})
 

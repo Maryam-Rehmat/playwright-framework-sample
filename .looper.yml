@@ -2,21 +2,54 @@ tools:
   nodejs: 16.18.0
   npm: 8.19.2
 
+envs:
+  global:
+    variables:
+      APP_NAME: ALL #default value for all apps
+      CONFIGURED_APPS:  #add app names here, this needs to be the same as conf.js -> testSuite
+        - ALL
+        - UFM
+        - Monitor
+        - Centrifuge
+        - Portfolio
+
+parameters:
+- app: { type: string }
+
 flows:
   default:
     - echo "IBG Test Suite!"
     - call: runAllTests
+  concord-triggered-flow:
+    - echo "Calling e2e flow from concord"
+    - if: $app
+      then:
+      - echo "App found from Concord"
+      - var(APP_NAME = '$app')
+    - echo "Running for App -> $APP_NAME"
+    - if: | #search app name here
+       %{app =~ CONFIGURED_APPS}
+      then:
+      - call: runAllTests
+      else:
+      - echo "No matching app name was found. Exiting!!"
   runAllTests:
     try:
       - npm install
-      - ENV=qa npm run tests:ufm-2-be-regression
-  runUFM2SMokeTes:
+      - npx playwright install
+      - ENV=qa TEST=regression  npm run tests:ufm-tests 
+    finally:
+      - call: reporter
+  runUFMSMokeTest:
     try:
       - npm install
-      - ENV=qa npm run tests:ufm-2-be-regression
+      - ENV=qa TEST=regression  npm run tests:ufm-tests 
     finally:
-      - publishReport:
-          context: playwright
-          dir: playwright-report
-          index: index.html
-          verbose: false
+      - call: reporter
+  reporter:
+    - publishReport:
+        context: playwright
+        dir: playwright-report
+        index: index.html
+        verbose: true
+
