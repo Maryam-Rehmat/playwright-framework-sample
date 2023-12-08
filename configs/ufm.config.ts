@@ -30,7 +30,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
     video: 'on',
-    screenshot:'on',
+    screenshot: 'on',
   },
 
 
@@ -46,6 +46,11 @@ export default defineConfig({
       dependencies: ['setup'],
       testMatch: /ufm-be/,
       grep: [new RegExp(process.env.tag + "")],
+      use: {
+        extraHTTPHeaders: {
+          "Authorization": `Bearer ${process.env.token}`
+        }
+      }
     },
     {
       name: 'ufm-fe',
