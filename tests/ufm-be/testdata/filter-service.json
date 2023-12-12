@@ -2,7 +2,7 @@
     "endpoint": "/filter/",
     "filter_selection": {
         "filter_name": "filter_automation_test",
-        "filter_type": 3,
+        "filter_type": 9,
         "screen_id": 201,
         "filters": [
             {
