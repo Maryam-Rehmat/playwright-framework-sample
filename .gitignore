@@ -7,3 +7,4 @@ node_modules/
 /blob-report/
 /allure-results/
 /allure-report/
+package-lock.json

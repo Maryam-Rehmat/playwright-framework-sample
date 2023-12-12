@@ -12,10 +12,13 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.39.0",
+    "@types/debug": "^4.1.12",
     "@types/node": "^20.8.4",
+    "@walmartlabs/testburst-playwright-js-reporter": "1.0.0",
     "allure-playwright": "^2.8.1"
   },
   "dependencies": {
+    "debug": "^4.3.4",
     "env-cmd": "^10.1.0"
   }
 }
