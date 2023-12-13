@@ -14,9 +14,11 @@ For any help in playwright APIs please refer the playwright documentation below
 - Clone the repository to your local machine
 
         git clone https://gecgithub01.walmart.com/IBG/ibg-test-scripts-bdd.git
+
 - Install the required dependencies
 
         npm install
+        npx playwright install  
 
 ### Local Test Execution
 - Check the configuration in the config files available in the [Config Folder](configs)
@@ -26,10 +28,15 @@ For any help in playwright APIs please refer the playwright documentation below
 - Copy the script that matches with the required project 
 - For Mac Run the below command after replacing the script name
 
-        ENV=qa npm run <script-name-from-package-json>
+          ENV=qa TEST=tag_name npm run <script-name-from-package-json>
+          Example- ENV=develop TEST=custom_tag npm run tests:ufm-tests
+
+
 - For Windows we need to provide the absolute path for playwright and env-cmd Hence Run the below command after replacing the config file and project
 
-        ./node_modules/.bin/env-cmd --environments qa ./node_modules/.bin/playwright test --config=configs/ufm2be.config.ts --project=ufm2be
+           ./node_modules/.bin/env-cmd --environments qa ./node_modules/.bin/env-cmd --environments tag ./node_modules/.bin/playwright test --config=configs/ufm.config.ts --project=ufm-be
+
+           Example-  ./node_modules/.bin/env-cmd --environments develop ./node_modules/.bin/env-cmd --environments Get_Historicals ./node_modules/.bin/playwright test --config=configs/ufm.config.ts --project=ufm-be
 
 ### Folder Structure
 
@@ -37,7 +44,7 @@ For any help in playwright APIs please refer the playwright documentation below
     ├── ...
     ├── configs                 # config files 
     ├── tests
-    │   ├── ufm1be              # workstream folders
+    │   ├── ufm-be              # workstream folders
     │   │   ├── fixtures        # playwright fixture files
     │   │   ├── globalsetup     # Prerequisite setup
     │   │   ├── testcases       
