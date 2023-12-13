@@ -1,0 +1,20 @@
+import debug from 'debug';
+import * as fs from 'fs';
+import { test as base } from '@playwright/test';
+import { Logger } from './logger';
+
+export const test = base.extend<{ saveLogs: void }>({
+  saveLogs: [async ({}, use, testInfo) => {
+    // Collecting logs during the test.
+    const logs:String[] = [];
+    debug.log = (...args) => logs.push(args.map(arg=>String(arg)).join(''));
+    debug.enable('myserver');
+
+    await use();
+
+    await Logger.addLogs(testInfo,logs)
+
+   // }
+  }, { auto: true }],
+});
+export { expect } from '@playwright/test';
