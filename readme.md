@@ -29,14 +29,14 @@ For any help in playwright APIs please refer the playwright documentation below
 - For Mac Run the below command after replacing the script name
 
           ENV=qa TEST=tag_name npm run <script-name-from-package-json>
--Example- ENV=develop TEST=custom_tag npm run tests:ufm-tests
+          Example- ENV=develop TEST=custom_tag npm run tests:ufm-tests
 
 
 - For Windows we need to provide the absolute path for playwright and env-cmd Hence Run the below command after replacing the config file and project
 
            ./node_modules/.bin/env-cmd --environments qa ./node_modules/.bin/env-cmd --environments tag ./node_modules/.bin/playwright test --config=configs/ufm.config.ts --project=ufm-be
 
--Example-  ./node_modules/.bin/env-cmd --environments develop ./node_modules/.bin/env-cmd --environments Get_Historicals ./node_modules/.bin/playwright test --config=configs/ufm.config.ts --project=ufm-be
+           Example-  ./node_modules/.bin/env-cmd --environments develop ./node_modules/.bin/env-cmd --environments Get_Historicals ./node_modules/.bin/playwright test --config=configs/ufm.config.ts --project=ufm-be
 
 ### Folder Structure
 
