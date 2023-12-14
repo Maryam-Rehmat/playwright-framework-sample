@@ -1,8 +1,8 @@
 {
-    "endpoint":"/filter/",
+    "endpoint": "/filter/",
     "filter_selection": {
         "filter_name": "filter_automation_test",
-        "filter_type": 3,
+        "filter_type": 9,
         "screen_id": 201,
         "filters": [
             {
@@ -10,10 +10,28 @@
                     312,
                     314
                 ],
-                "channel_group":[403],
-                "sbu":[209,203],
-                "department":[4,5,6,7,8]
+                "channel_group": [
+                    403
+                ],
+                "sbu": [
+                    209,
+                    203
+                ],
+                "department": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                ]
             }
         ]
-    }
+    },
+    "success_message": "filter created successfully",
+    "duplicate_filter_name_response": {
+        "status_code": 400,
+        "detail": "Filter name is already taken",
+        "headers": null
+    },
+    "delete_message": "filter deleted successfully"
 }
