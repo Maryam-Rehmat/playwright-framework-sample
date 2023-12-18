@@ -1,7 +1,7 @@
 import debug from 'debug';
 import * as fs from 'fs';
 import { test as base } from '@playwright/test';
-import { Logger } from './logger';
+import { Utility } from './utils';
 
 export const test = base.extend<{ saveLogs: void }>({
   saveLogs: [async ({}, use, testInfo) => {
@@ -12,7 +12,7 @@ export const test = base.extend<{ saveLogs: void }>({
 
     await use();
 
-    await Logger.addLogs(testInfo,logs)
+    await Utility.addLogs(testInfo,logs)
 
    // }
   }, { auto: true }],
