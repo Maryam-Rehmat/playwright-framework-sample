@@ -1,49 +1,57 @@
 import { test, expect } from '@playwright/test';
 import testdatafile from '../testdata/historical-forecast.json';
-import { json } from 'stream/consumers';
+import debug from 'debug';
 
-test.describe('validating the historical forecast service',() => {
+let testdata = testdatafile;
+testdatafile.sba_datas.forEach(sba_date =>{
+  test.describe('Validation of @Historical_Forecast @Regression @smoke', () => {
+   let responseBody,forecast;
+  
+  // API endpoint URL
+  const endpointURL = `${process.env.apiBaseURLUFM}${testdata.endpoint}`
+  debug.log(endpointURL);
 
-    test('checking the list of historical forecast @Regression @smoke @gethistoricalforecast',async ({request}) => {
-
-  const testdata = testdatafile;
-  const { token, apiBaseURLUFM } = process.env;
-  const headersdata = {
-    "Authorization": `Bearer ${token}`
-  }
-  const endpointURL = `${apiBaseURLUFM}${testdata.endpoint}`
-  console.log(endpointURL);
-  const responseData=await request.get(endpointURL,{
-    headers:headersdata,params: { "dim_id": testdata.dimensions.dim_id,"classification_id": testdata.dimensions.classification_id,"dim_val_id": testdata.dimensions.dim_val_id}  
+  test('the list of historical forecast for @Forecastname', async ({ context }) => {
+    //Get call for the historical forecast names
+    await test.step('Make a Get Request for list of Historical forecast of SBA '+sba_date.forecastname, async () => {
+      debug.log('Make a Get Request for list of Historical forecast of SBA '+sba_date.forecastname);
+  let responseData=await context.request.get(endpointURL,{
+    data: { "dim_id": sba_date.queryParams.dim_id,"classification_id": sba_date.queryParams.classification_id,"dim_val_id": sba_date.queryParams.dim_val_id}  
   })
-  const responseBody = JSON.parse(await responseData.text());
-  console.log("historical Response : ")
-  console.log(responseBody);
+  let responseBody = JSON.parse(await responseData.text());
+  debug.log("historical Response : "+responseBody)
+})
+  //});
 
-  console.log('name value is :')
-  console.log(responseBody.row_data[0].name);
-  const Hist_forecast_count=responseBody.row_data.length;
-  console.log('length of array is :')
-  console.log(Hist_forecast_count)
-  //expect(responseBody.row_data[0].name).toContain(testdata.historical_Forecast_Name)
+// test('check the name for @SBA', async ({ context }) => {
 
-  //const responseBody1 = testdata.expected_response.row_data;
-  //console.log(responseBody1)
-  //const forcastNames: String[] = responseBody1.map((obj: any) => obj.name);
-  //console.log(forcastNames)
-  const forcastNames: String[] = responseBody.row_data.map((obj: any) => obj.name);
- //expect(forcastNames.find(x=>x.includes('OPTICAL'))).toContain(testdata.historical_Forecast_Name);
- //expect(responseBody.row_data.map(e => e.name)).toContain("OPTICAL");
- expect(forcastNames).toContain(testdata.historical_Forecast_Name);
-  console.log('Historical forecast is of '+testdata.historical_Forecast_Name+' SBA type')
-
- if((Hist_forecast_count)==1){
-  console.log('The historical forecast count is 1')
- }
-
- 
-
-        
-    })
+  //fetching the historical forecast names 
+  await test.step('Check if the expected sba name with the actual', async () => {
+    debug.log('Check the SBA Name in Historical forecast date')
+  let forcastNames = responseBody.row_data.map((obj: any) => obj.name);
+  forcastNames.forEach((forecast:string)=>{
+  debug.log('Previously Submitted Forecast name is :'+forecast)
+  })
+  //Validating the expected sba name with the actual
+ expect(forecast).toContain(sba_date.forecastname);
+ debug.log('Historical forecast is of '+sba_date.forecastname+' SBA type')
 }
 )
+//});
+ 
+
+//test('validate the list @count', async ({ context }) => {
+//Fetchingthe count of Historical forecasts
+await test.step('Verify the count of historical forecast', async () => {
+let Hist_forecast_count=responseBody.row_data.length;
+  debug.log('Number of Forecasts already submitted and showing in Historical forecast section is :'+Hist_forecast_count);
+ if((Hist_forecast_count)==12){
+  debug.log('The historical forecast count is 12')
+ }else{
+  expect(Hist_forecast_count).toEqual(12);
+  debug.log('The historical forecast count is not 12')
+ }}
+)
+}
+);
+})})

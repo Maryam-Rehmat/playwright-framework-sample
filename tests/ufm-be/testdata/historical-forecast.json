@@ -1,63 +1,24 @@
 {
-    
-        "endpoint": "/scenario/list-historicals",
-        "dimensions":{
-            "dim_id":"10",
-            "classification_id":"12",
-            "dim_val_id":"1018",
-            "dim_val_id1":"1002"
-            
+    "endpoint": "/scenario/list-historicals",
+    "sba_datas":[       
+        {
+            "queryParams":
+            {
+                "dim_id":"10",
+                "classification_id":"12",
+                "dim_val_id":"1018"
+            },
+            "forecastname":"OPTICAL"
         },
-        "historical_Forecast_Name":"OPTICAL",
-        "expected_response": {
-            "column_def": [
-                {
-                    "headerName": "Name",
-                    "field": "name",
-                    "order": 1,
-                    "resizable": true
-                },
-                {
-                    "headerName": "Submission date",
-                    "field": "submission_date",
-                    "order": 2,
-                    "resizable": true
-                },
-                {
-                    "headerName": "Scenario ID",
-                    "field": "scenario_id",
-                    "order": 3,
-                    "resizable": true
-                },
-                {
-                    "headerName": "Dimension Value ID",
-                    "field": "dim_val_id",
-                    "order": 4,
-                    "resizable": true
-                },
-                {
-                    "headerName": "Version",
-                    "field": "scenario_version_timestamp",
-                    "order": 5,
-                    "resizable": true
-                }
-            ],
-            "row_data": [
-                {
-                    "name": "CMO Nov FY23 Forecast",
-                    "submission_date": "Nov 13, 2023",
-                    "scenario_id": 11131701340995,
-                    "scenario_version_timestamp": 1701340995,
-                    "dim_val_id": 1002
-                },
-                {
-                    "name": "OPTICAL Nov FY23 Forecast",
-                    "submission_date": "Nov 13, 2023",
-                    "scenario_id": 11141701341013,
-                    "scenario_version_timestamp": 1701341014,
-                    "dim_val_id": 1018
-                }
-            ]
+        {
+            "queryParams":
+            {
+                "dim_id":"10",
+                "classification_id":"12",
+                "dim_val_id":"1002"
+            },
+            "forecastname":"CMO"
         }
-        }
-    
+    ]
+}
+            
