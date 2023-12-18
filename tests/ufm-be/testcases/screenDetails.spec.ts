@@ -17,10 +17,8 @@ test.describe('Validating the screen Details API',()=>{
 
      const endpointURL=`${apiBaseURLUFM}${testdata.endpoint}`;
      console.log(endpointURL);
-     const responseData=await request.get(endpointURL,
-        {
-       headers:headersdata  
-        }
+     const responseData=await request.get(endpointURL,{
+       headers:headersdata  }
     )
      const responseBody = JSON.parse(await responseData.text());
      console.log("responseBody",responseBody)
@@ -34,6 +32,3 @@ test.describe('Validating the screen Details API',()=>{
    
     })
 })
-
-
-
