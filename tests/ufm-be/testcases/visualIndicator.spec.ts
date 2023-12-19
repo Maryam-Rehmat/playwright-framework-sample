@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import testdatafile from "../testdata/visual-indicator.json";
 import debug from "debug";
 
-test.describe("Verify the @visualindicator API @Regresion @Smoke", () => {
+test.describe("Verify the @visualindicator API @Regression @Smoke", () => {
   let responseBody;
   const endpointURL = `${process.env.apiBaseURLUFM}${testdatafile.endpoint}`;
   debug.log(endpointURL);
