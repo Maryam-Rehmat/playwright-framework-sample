@@ -17,8 +17,9 @@ triggers:
   - push: disabled
   - manual:
       name: Run API Regression
-      var(envr=qa)
-      call: runUFMBeTests
+      try:
+        - var(envr=qa)
+        - call: runUFMBeTests
 
 parameters:
   - app: { type: string }
