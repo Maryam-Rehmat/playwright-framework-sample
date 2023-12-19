@@ -29,9 +29,7 @@ testdatafile.sba_datas.forEach(sba_date => {
         });
 
         //Fetch the historical forecasts and verify the SBA type
-        test('Check the list of historical forecast for ' + sba_date.forecastname, async ({
-            context
-        }) => {
+        test('Check the list of historical forecast for ' + sba_date.forecastname, async ({}) => {
 
             //Make a get call and verify the historical forecast names contain the SBA name  
             await test.step('Check if all the Historical forecast name contains ' + sba_date.forecastname, async () => {
@@ -52,9 +50,7 @@ testdatafile.sba_datas.forEach(sba_date => {
             })
         });
 
-        test('validate the list @count for ' + sba_date.forecastname, async ({
-            context
-        }) => {
+        test('validate the list @count for ' + sba_date.forecastname, async ({}) => {
             //Fetching the count of Historical forecasts
             await test.step('Verify the count of historical forecast of ' + sba_date.forecastname, async () => {
 
