@@ -37,7 +37,6 @@ flows:
     - if: | #search app name here
        %{app =~ CONFIGURED_APPS}
       then:
-      var(envr=qa)
       - call: runAllTests
       else:
       - echo "No matching app name was found. Exiting!!"
@@ -56,7 +55,7 @@ flows:
   runUFMSMokeTest:
     try:
       - call: setup
-      - ENV=${envr} TEST=smoke  npm run tests:ufm-tests 
+      - ENV=$envr TEST=smoke  npm run tests:ufm-tests 
     finally:
       - call: reporter
 
