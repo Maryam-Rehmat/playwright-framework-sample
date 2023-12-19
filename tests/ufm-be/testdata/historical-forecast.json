@@ -1,5 +1,6 @@
 {
     "endpoint": "/scenario/list-historicals",
+    "forecast_count":"12",
     "sba_datas":[       
         {
             "queryParams":
