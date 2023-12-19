@@ -2,11 +2,6 @@ tools:
   nodejs: 16.18.0
   npm: 8.19.2
 
-triggers:
- - push: disabled
- - manual:
-    name: Run Regression
-    call: runAllTests
 envs:
   global:
     variables:
@@ -17,10 +12,16 @@ envs:
         - Monitor
         - Centrifuge
         - Portfolio
+        
+triggers:
+  - push: disabled
+  - manual:
+      name: Run Regression
+      call: runAllTests
 
 parameters:
-- app: { type: string }
-- envr: 'develop' { type: string}
+  - app: { type: string }
+  - envr: 'develop' { type: string}
 
 flows:
   default:
