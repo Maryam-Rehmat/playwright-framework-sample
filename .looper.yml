@@ -2,6 +2,11 @@ tools:
   nodejs: 16.18.0
   npm: 8.19.2
 
+triggers:
+ - push: disabled
+ - manual:
+    name: Run Regression
+    call: runAllTests
 envs:
   global:
     variables:
@@ -15,7 +20,7 @@ envs:
 
 parameters:
 - app: { type: string }
-- envr : develop {type:string}
+- envr: 'develop' { type: string}
 
 flows:
   default:
