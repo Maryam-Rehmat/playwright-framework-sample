@@ -17,12 +17,11 @@ triggers:
   - push: disabled
   - manual:
       name: Run API Regression
-      try:
-        - var(envr=qa)
-        - call: runUFMBeTests
+      call: runUFMBeTests
 
 parameters:
   - app: { type: string }
+  - envr: { type: string }
 
 flows:
   default:
@@ -45,13 +44,13 @@ flows:
   runAllTests:
     try:
       - call: setup
-      - ENV=${envr} TEST=regression  npm run tests:ufm-tests 
+      - ENV=$envr TEST=regression  npm run tests:ufm-tests 
     finally:
       - call: reporter
   runUFMBeTests:
     try:
       - call: setup
-      - ENV=${envr} TEST=regression  npm run tests:ufm-tests-be
+      - ENV=$envr TEST=regression  npm run tests:ufm-tests-be
     finally:
       - call: reporter
   runUFMSMokeTest:

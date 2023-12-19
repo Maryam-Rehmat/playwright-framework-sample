@@ -21,4 +21,5 @@ flows:
         sync: true
         parameters:
           app: ${app}
+          envr: ${envr}
     - log: "Looper Job completed"
