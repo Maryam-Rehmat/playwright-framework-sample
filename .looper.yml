@@ -17,11 +17,11 @@ triggers:
   - push: disabled
   - manual:
       name: Run Regression
+      var(envr=qa)
       call: runAllTests
 
 parameters:
   - app: { type: string }
-  - envr: { type: string}
 
 flows:
   default:
@@ -37,6 +37,7 @@ flows:
     - if: | #search app name here
        %{app =~ CONFIGURED_APPS}
       then:
+      var(envr=qa)
       - call: runAllTests
       else:
       - echo "No matching app name was found. Exiting!!"
@@ -44,13 +45,13 @@ flows:
     try:
       - npm install
       - npx playwright install
-      - ENV=$envr TEST=regression  npm run tests:ufm-tests 
+      - ENV=${envr} TEST=regression  npm run tests:ufm-tests 
     finally:
       - call: reporter
   runUFMSMokeTest:
     try:
       - npm install
-      - ENV=$envr TEST=smoke  npm run tests:ufm-tests 
+      - ENV=${envr} TEST=smoke  npm run tests:ufm-tests 
     finally:
       - call: reporter
   reporter:
