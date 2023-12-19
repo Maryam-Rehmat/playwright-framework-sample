@@ -1,0 +1,24 @@
+{
+    "endpoint": "/scenario/scenario-composition",
+    "classification_id": "12",
+    "visual_indicator_response": [
+        {
+            "dataset_type": "Actuals",
+            "id": 10041697017824,
+            "version": 1701419411,
+            "last_updated": "2023-12-01T08:30:11"
+        },
+        {
+            "dataset_type": "Extrapolated Forecast",
+            "id": 10061697018013,
+            "version": 1701253922,
+            "last_updated": "2023-11-29T10:32:02"
+        },
+        {
+            "dataset_type": "Forecast",
+            "id": 10051697018005,
+            "version": 1701256293,
+            "last_updated": "2023-11-29T11:11:33"
+        }
+    ]
+}
