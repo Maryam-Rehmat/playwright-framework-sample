@@ -21,7 +21,7 @@ triggers:
 
 parameters:
   - app: { type: string }
-  - envr: 'develop' { type: string}
+  - envr: { type: string}
 
 flows:
   default:
