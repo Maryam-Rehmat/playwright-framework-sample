@@ -3,7 +3,7 @@ import testdata from '../testdata/filter-service.json';
 import { test, expect } from '../../common/fixtures/test-hook'
 import debug from 'debug';
 
-test.describe('Verify the @Filter API @Regresion @Smoke', () => {
+test.describe('Verify the @Filter API @Regression @Smoke', () => {
   test.describe.configure({ mode: 'serial' });
 
   // variable used to store the filter id and use it across the tests under this describe

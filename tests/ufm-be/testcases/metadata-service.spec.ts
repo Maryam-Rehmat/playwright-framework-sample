@@ -3,7 +3,7 @@ import testdatafile from '../testdata/metadata-service.json';
 
 test.describe('Validating the metadata service',()=>{
 
-  test('Checking the dimension config response @Regresion @Smoke @getdimensionconfig', async ({request }) => {
+  test('Checking the dimension config response @Regression @Smoke @getdimensionconfig', async ({request }) => {
     // const bearertoken = await authToken.getBearerToken();
     const testdata = testdatafile.configEndpoint;
      const { token,apiBaseURLUFM} = process.env;

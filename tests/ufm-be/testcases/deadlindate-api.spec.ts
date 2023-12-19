@@ -4,7 +4,7 @@ import { test, expect } from '../../common/fixtures/test-hook'
 import debug from 'debug';
 import { Utility } from '../../common/fixtures/utils'
 
-test.describe('Verify the @deadlinedate API @Regresion @Smoke', () => {
+test.describe('Verify the @deadlinedate API @Regression @Smoke', () => {
   // variable used to store the filter id and use it across the tests under this describe
 
   let apiResponse, apiResponseBody;
