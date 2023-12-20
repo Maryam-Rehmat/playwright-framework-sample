@@ -5,7 +5,7 @@ tools:
 envs:
   global:
     variables:
-      APP_NAME: ALL #default value for all apps
+      APPLICATION_NAME: ALL #default value for all apps
       CONFIGURED_APPS:  #add app names here, this needs to be the same as conf.js -> testSuite
         - ALL
         - UFM
@@ -32,8 +32,8 @@ flows:
     - if: $app
       then:
       - echo "App found from Concord"
-      - var(APP_NAME = '$app')
-    - echo "Running for App -> $APP_NAME"
+      - var(APPLICATION_NAME = '$app')
+    - echo "Running for App -> $APPLICATION_NAME"
     - if: | #search app name here
        %{app =~ CONFIGURED_APPS}
       then:
