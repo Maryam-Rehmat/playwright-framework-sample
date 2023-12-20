@@ -1,11 +1,7 @@
 import { test as setup, expect } from '@playwright/test';
-import loginData from '../testdata/LoginData.json'
+import { Utility } from '../../common/fixtures/utils';
+
 
 setup('authenticate', async ({ request }) => {
-     const authURL = process.env.authTokenURL
-     const responseBody = await request.post(`${authURL}`,{
-        data : loginData.user1
-    })
-    const token = (await responseBody.json()).token;
-    process.env.token = token;
+    process.env.token = await Utility.getTokenForUser('s0g0fhn',request);
 });
