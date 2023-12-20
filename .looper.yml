@@ -43,19 +43,19 @@ flows:
   runAllTests:
     try:
       - call: setup
-      - ENV=$envr TEST=regression  npm run tests:ufm-tests 
+      - ENV=$envr TEST=regression npm run tests:ufm-tests 
     finally:
       - call: reporter
   runUFMBeTests:
     try:
       - call: setup
-      - ENV=$envr TEST=regression  npm run tests:ufm-tests-be
+      - ENV=$envr TEST=regression npm run tests:ufm-tests-be
     finally:
       - call: reporter
   runUFMSMokeTest:
     try:
       - call: setup
-      - ENV=$envr TEST=smoke  npm run tests:ufm-tests 
+      - ENV=$envr TEST=smoke npm run tests:ufm-tests 
     finally:
       - call: reporter
 
