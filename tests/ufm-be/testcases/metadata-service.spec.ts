@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import debug from 'debug';
+import { test, expect } from '../../common/fixtures/test-hook';
 import testdatafile from '../testdata/metadata-service.json';
 
 test.describe('Validating the metadata service',()=>{
@@ -11,11 +12,12 @@ test.describe('Validating the metadata service',()=>{
        "Authorization":`Bearer ${token}`
      }
      const endpointURL=`${apiBaseURLUFM}${testdata.endpoint}`;
-     console.log(endpointURL);
+     debug.log(endpointURL);
      const responseData=await request.get(endpointURL,{
        headers:headersdata  
      })
      const responseBody = JSON.parse(await responseData.text());
+     debug.log(responseBody)
      expect(responseBody).toMatchObject(testdata.expected_response);
    
    });

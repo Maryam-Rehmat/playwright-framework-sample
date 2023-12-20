@@ -1,6 +1,6 @@
-import { test, expect } from "@playwright/test";
+//import { test, expect } from "@playwright/test";
 import testdatafile from "../testdata/screenDetails.json";
-//import { test, expect } from '../../common/fixtures/test-hook'
+import { test, expect } from '../../common/fixtures/test-hook'
 import debug from "debug";
 
 test.describe("Validating the screen Details API @Regression @Smoke @screenDetails", () => {

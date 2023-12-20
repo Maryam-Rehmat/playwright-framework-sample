@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "../../common/fixtures/test-hook";
 import testdatafile from "../testdata/visual-indicator.json";
 import debug from "debug";
 
