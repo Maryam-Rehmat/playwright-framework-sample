@@ -3,7 +3,6 @@ import testdatafile from "../testdata/screenDetails.json";
 import debug from "debug";
 
 test.describe("Validating the @screenDetails API @Regression @Smoke", () => {
-
   let responseBody;
   const testdata = testdatafile.configEndpoint;
   const endpointURL = `${process.env.apiBaseURLUFM}${testdata.endpoint}`;
