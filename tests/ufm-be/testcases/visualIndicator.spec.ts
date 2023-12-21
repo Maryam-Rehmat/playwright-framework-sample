@@ -1,8 +1,8 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from '../../common/fixtures/test-hook';
 import testdatafile from "../testdata/visual-indicator.json";
 import debug from "debug";
 
-test.describe("Verify the @visualindicator API @Regresion @Smoke", () => {
+test.describe("Verify the @visualindicator API @Regression @Smoke", () => {
   let responseBody;
   const endpointURL = `${process.env.apiBaseURLUFM}${testdatafile.endpoint}`;
   debug.log(endpointURL);
@@ -15,9 +15,8 @@ test.describe("Verify the @visualindicator API @Regresion @Smoke", () => {
         params: { "classification_id": testdatafile.classification_id }
       })
       expect(responseBody).toBeOK();
-      debug.log(responseBody)
+      debug.log(JSON.stringify(responseBody));
       responseBody = JSON.parse(await responseBody.text());
-      debug.log("responseBody", responseBody);
     });
     //Assertion
     await test.step("Check if the response has all 3 dates", async () => {
