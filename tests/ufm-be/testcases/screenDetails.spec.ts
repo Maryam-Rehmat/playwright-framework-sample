@@ -1,14 +1,14 @@
-//import { test, expect } from "@playwright/test";
+import { test, expect } from '../../common/fixtures/test-hook';
 import testdatafile from "../testdata/screenDetails.json";
-import { test, expect } from '../../common/fixtures/test-hook'
 import debug from "debug";
 
-test.describe("Validating the screen Details API @Regression @Smoke @screenDetails", () => {
+test.describe("Validating the @screenDetails API @Regression @Smoke", () => {
+
   let responseBody;
   const testdata = testdatafile.configEndpoint;
   const endpointURL = `${process.env.apiBaseURLUFM}${testdata.endpoint}`;
   debug.log(endpointURL);
-  
+
   test("Checking the screen Details API response ", async ({ context }) => {
     //get request for the screen details
     await test.step("Make a Get Request for screen Details", async () => {
