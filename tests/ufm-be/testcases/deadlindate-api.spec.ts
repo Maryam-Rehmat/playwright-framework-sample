@@ -1,4 +1,3 @@
-//import { test, expect } from '@playwright/test';
 import testdata from '../testdata/deadlinedate.json'
 import { test, expect } from '../../common/fixtures/test-hook'
 import debug from 'debug';
@@ -24,7 +23,7 @@ test.describe('Verify the @deadlinedate API @Regresion @Smoke', () => {
       //Extracting the response body
       apiResponseBody = await apiResponse.json();
       debug.log(JSON.stringify(apiResponseBody));
-      
+
       //response assertion
       expect(apiResponse).toBeOK();
 
@@ -42,7 +41,7 @@ test.describe('Verify the @deadlinedate API @Regresion @Smoke', () => {
       //Comparing the actual aand expecetd dates
       debug.log('Checking if the deadline date is  : ', strExpdate);
       expect(actualDate).toStrictEqual(strExpdate);
-      
+
     })
 
   })

@@ -1,4 +1,3 @@
-//import { test, expect } from '@playwright/test';
 import testdata from '../testdata/filter-service.json';
 import { test, expect } from '../../common/fixtures/test-hook'
 import debug from 'debug';
@@ -29,7 +28,6 @@ test.describe('Verify the @Filter API @Regresion @Smoke', () => {
       expect(apiResponse).toBeOK();
       expect(apiResponseBody).toEqual(testdata.success_message)
     })
-
 
   });
 
@@ -115,7 +113,6 @@ test.describe('Verify the @Filter API @Regresion @Smoke', () => {
 
     })
   })
-
 
 })
 

@@ -37,13 +37,13 @@ flows:
     try:
       - npm install
       - npx playwright install
-      - ENV=qa TEST=regression  npm run tests:ufm-tests 
+      - ENV=qa TEST=Regression  npm run tests:ufm-tests 
     finally:
       - call: reporter
   runUFMSMokeTest:
     try:
       - npm install
-      - ENV=qa TEST=regression  npm run tests:ufm-tests 
+      - ENV=qa TEST=Regression  npm run tests:ufm-tests 
     finally:
       - call: reporter
   reporter:
