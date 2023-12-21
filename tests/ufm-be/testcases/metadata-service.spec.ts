@@ -1,29 +1,29 @@
 import { test, expect } from '@playwright/test';
 import testdatafile from '../testdata/metadata-service.json';
 
-test.describe('Validating the metadata service',()=>{
+test.describe('Validating the metadata service', () => {
 
-  test('Checking the dimension config response @Regresion @Smoke @getdimensionconfig', async ({request }) => {
+  test('Checking the dimension config response @Regression @Smoke @getdimensionconfig', async ({ request }) => {
     // const bearertoken = await authToken.getBearerToken();
     const testdata = testdatafile.configEndpoint;
-     const { token,apiBaseURLUFM} = process.env;
-     const headersdata = {
-       "Authorization":`Bearer ${token}`
-     }
-     const endpointURL=`${apiBaseURLUFM}${testdata.endpoint}`;
-     console.log(endpointURL);
-     const responseData=await request.get(endpointURL,{
-       headers:headersdata  
-     })
-     const responseBody = JSON.parse(await responseData.text());
-     expect(responseBody).toMatchObject(testdata.expected_response);
-   
-   });
+    const { token, apiBaseURLUFM } = process.env;
+    const headersdata = {
+      "Authorization": `Bearer ${token}`
+    }
+    const endpointURL = `${apiBaseURLUFM}${testdata.endpoint}`;
+    console.log(endpointURL);
+    const responseData = await request.get(endpointURL, {
+      headers: headersdata
+    })
+    const responseBody = JSON.parse(await responseData.text());
+    expect(responseBody).toMatchObject(testdata.expected_response);
+
+  });
 
   //  commented out the following testcase as the API was deprecated
   //  testdatafile.dimensionEndpoint.forEach(testdata => {
   //   test('Checking the dimension response for '+testdata.name+' @Regresion @Smoke @getdimensionconfig', async ({request }) => {
-     
+
   //     const { token,apiBaseURLUFM} = process.env;
   //     const headersdata = {
   //       "Authorization":`Bearer ${token}`
@@ -36,11 +36,11 @@ test.describe('Validating the metadata service',()=>{
   //     })
   //     const responseBody = JSON.parse(await responseData.text());
   //     expect(responseBody).toMatchObject(testdata.expected_response);
-    
+
   //   });
   //  })
-   
-   
+
+
 })
 
 
