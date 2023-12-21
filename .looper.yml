@@ -5,16 +5,23 @@ tools:
 envs:
   global:
     variables:
-      APP_NAME: ALL #default value for all apps
+      APPLICATION_NAME: ALL #default value for all apps
       CONFIGURED_APPS:  #add app names here, this needs to be the same as conf.js -> testSuite
         - ALL
         - UFM
         - Monitor
         - Centrifuge
         - Portfolio
+        
+triggers:
+  - push: disabled
+  - manual:
+      name: Run API Regression
+      call: runUFMBeTests
 
 parameters:
-- app: { type: string }
+  - app: { type: string }
+  - envr: { type: string }
 
 flows:
   default:
@@ -25,8 +32,8 @@ flows:
     - if: $app
       then:
       - echo "App found from Concord"
-      - var(APP_NAME = '$app')
-    - echo "Running for App -> $APP_NAME"
+      - var(APPLICATION_NAME = '$app')
+    - echo "Running for App -> $APPLICATION_NAME"
     - if: | #search app name here
        %{app =~ CONFIGURED_APPS}
       then:
@@ -35,17 +42,26 @@ flows:
       - echo "No matching app name was found. Exiting!!"
   runAllTests:
     try:
-      - npm install
-      - npx playwright install
-      - ENV=qa TEST=regression  npm run tests:ufm-tests 
+      - call: setup
+      - ENV=$envr TEST=regression npm run tests:ufm-tests 
+    finally:
+      - call: reporter
+  runUFMBeTests:
+    try:
+      - call: setup
+      - ENV=$envr TEST=regression npm run tests:ufm-tests-be
     finally:
       - call: reporter
   runUFMSMokeTest:
     try:
-      - npm install
-      - ENV=qa TEST=regression  npm run tests:ufm-tests 
+      - call: setup
+      - ENV=$envr TEST=smoke npm run tests:ufm-tests 
     finally:
       - call: reporter
+
+  setup:
+      - npm install
+      - npx playwright install
   reporter:
     - publishReport:
         context: playwright

@@ -1,0 +1,178 @@
+[
+  {
+    "userId": "s0g0fhn",
+    "displayName": "Santhoshkumar Govindasamy",
+    "givenName": "Santhoshkumar",
+    "familyName": "Govindasamy",
+    "mail": "Santhoshkumar.Govindasamy@walmart.com",
+    "userPrincipalName": "s0g0fhn"
+  },
+  {
+    "userId": "l0p07dx",
+    "displayName": "Lokesh Patni",
+    "givenName": "Lokesh",
+    "familyName": "Patni",
+    "mail": "lokesh.patni@walmart.com",
+    "userPrincipalName": "l0p07dx"
+  },
+  {
+    "userId": "LB-ibg-ufm-inputter-sc-fc",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "SUPPLYCHAIN-FULFILMENT CENTERS",
+    "displayName": "IBG-UFM-LOBInputter SUPPLYCHAIN-FULFILMENT CENTERS",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-inputter-sc-fc"
+  },
+  {
+    "userId": "LB-ibg-ufm-inputter-opt-rx",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "OPTICAL-RX",
+    "displayName": "IBG-UFM-LOBInputter OPTICAL-RX",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-inputter-opt-rx"
+  },
+  {
+    "userId": "LB-ibg-ufm-inputter-wmt",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "WMT",
+    "displayName": "IBG-UFM-LOBInputter WMT",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-inputter-wmt"
+  },
+  {
+    "userId": "LB-ibg-ufm-inputter-sdoh-cmo",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "SDOH-CMO",
+    "displayName": "IBG-UFM-LOBInputter SDOH-CMO",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-inputter-sdoh-cmo"
+  },
+  {
+    "userId": "LB-ibg-ufm-inputter-inscrt-mrktplc",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "INSTACART-MARKETPLACE",
+    "displayName": "IBG-UFM-LOBInputter INSTACART-MARKETPLACE",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-inputter-inscrt-mrktplc"
+  },
+  {
+    "userId": "LB-ibg-ufm-inputter-mrops",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "SUPPLIES AND M&R STORE OPS",
+    "displayName": "IBG-UFM-LOBInputter SUPPLIES AND M&R STORE OPS",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-inputter-mrops"
+  },
+  {
+    "userId": "LB-ibg-ufm-inputter-ho",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "HOME OFFICE",
+    "displayName": "IBG-UFM-LOBInputter HOME OFFICE",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-inputter-ho"
+  },
+  {
+    "userId": "LB-ibg-ufm-inputter-sc-fc",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "OPERATIONS-FUEL",
+    "displayName": "IBG-UFM-LOBInputter OPERATIONS-FUEL",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-inputter-sc-fc"
+  },
+  {
+    "userId": "LB-ibg-ufm-inputter-re",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "REAL ESTATE",
+    "displayName": "IBG-UFM-LOBInputter REAL ESTATE",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-inputter-re"
+  },
+  {
+    "userId": "LB-ibg-ufm-inputter-ecom-cc",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "CUSTOMER CONTACTS-ECOM",
+    "displayName": "IBG-UFM-LOBInputter CUSTOMER CONTACTS-ECOM",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-inputter-ecom-cc"
+  },
+  {
+    "userId": "LB-ibg-ufm-reviewer-sc-hw",
+    "givenName": "IBG-UFM-BAReviewer",
+    "familyName": "ECOM-",
+    "displayName": "IBG-UFM-BAReviewer ECOM-",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-reviewer-sc-hw"
+  },
+  {
+    "userId": "LB-ibg-ufm-reviewer-cr",
+    "givenName": "IBG-UFM-BAReviewer",
+    "familyName": "CUSTOMER AND REVENUE",
+    "displayName": "IBG-UFM-BAReviewer CUSTOMER AND REVENUE",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-reviewer-cr"
+  },
+  {
+    "userId": "LB-ibg-ufm-reviewer-lmd-merch",
+    "givenName": "IBG-UFM-BAReviewer",
+    "familyName": "LMD-MERCHANDISING",
+    "displayName": "IBG-UFM-BAReviewer LMD-MERCHANDISING",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-reviewer-lmd-merch"
+  },
+  {
+    "userId": "LB-ibg-ufm-reviewer-re",
+    "givenName": "IBG-UFM-BAReviewer",
+    "familyName": "REAL ESTATE",
+    "displayName": "IBG-UFM-BAReviewer REAL ESTATE",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-reviewer-re"
+  },
+  {
+    "userId": "LB-ibg-ufm-reviewer-opr-ecom",
+    "givenName": "IBG-UFM-BAReviewer",
+    "familyName": "OPERATIONS-ECOMMERCE",
+    "displayName": "IBG-UFM-BAReviewer OPERATIONS-ECOMMERCE",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-reviewer-opr-ecom"
+  },
+  {
+    "userId": "LB-ibg-ufm-segment",
+    "givenName": "IBG-UFM-Segment",
+    "familyName": "CONSOLIDATOR",
+    "displayName": "IBG-UFM-Segment CONSOLIDATOR",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-segment"
+  },
+  {
+    "userId": "LB-ibg-ufm-segment-cmn",
+    "givenName": "IBG-UFM-Segment",
+    "familyName": "COMMON-CONSOLIDATOR",
+    "displayName": "IBG-UFM-Segment COMMON-CONSOLIDATOR",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-segment-cmn"
+  },
+  {
+    "userId": "LB-ing-ufm-inputter-cmn",
+    "givenName": "IBG-UFM-LOBInputter",
+    "familyName": "COMMON-LOB",
+    "displayName": "IBG-UFM-LOBInputter COMMON-LOB",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ing-ufm-inputter-cmn"
+  },
+  {
+    "userId": "LB-ibg-ufm-reviewer-cmn",
+    "givenName": "IBG-UFM-BAReviewer",
+    "familyName": "COMMON-BA",
+    "displayName": "IBG-UFM-BAReviewer COMMON-BA",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-ufm-reviewer-cmn"
+  },
+  {
+    "userId": "LB-ibg-test-user-01",
+    "givenName": "IBG-UFM-USER-LOBInputter",
+    "familyName": "Optical",
+    "displayName": "IBG-UFM-USER-LOBInputter Optical",
+    "BussinessUnitNumber": "",
+    "userPrincipalName": "LB-ibg-test-user-01"
+  }
+]
