@@ -158,5 +158,21 @@
     "displayName": "IBG-UFM-BAReviewer COMMON-BA",
     "mail": "",
     "userPrincipalName": "LB-ibg-ba-cmn"
+  },
+  {
+    "userId": "s0g0fhn",
+    "displayName": "Santhoshkumar Govindasamy",
+    "givenName": "Santhoshkumar",
+    "familyName": "Govindasamy",
+    "mail": "Santhoshkumar.Govindasamy@walmart.com",
+    "userPrincipalName": "s0g0fhn"
+  },
+  {
+    "userId": "l0p07dx",
+    "displayName": "Lokesh Patni",
+    "givenName": "Lokesh",
+    "familyName": "Patni",
+    "mail": "lokesh.patni@walmart.com",
+    "userPrincipalName": "l0p07dx"
   }
 ]
