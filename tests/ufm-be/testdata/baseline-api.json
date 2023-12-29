@@ -1,68 +1,22 @@
-{
-    "configEndpoint": 
-    {
+   {
     "endpoint": "/scenario/list-historicals",
-    "forecast_name":"PRIMARY",
-    
-    "sba_datas":     
-        {
-            "queryParams":
+    "forecast_name":"PRIMARY", 
+    "queryParams": 
             {
                 "dim_id":"10",
                 "classification_id":"12",
-                "dim_val_id":"1018",
-                "include_primary":"true"
+                "dim_val_id":"1018"   
             },
-            "exclude_primary":"false"
-        }
-       
-    ,
 
-    "expected_response": 
+            "include_primary":"true",
+            "exclude_primary":"false",
+    "expected_response":
         {
-            "column_def": [
-                {
-                    "headerName": "Name",
-                    "field": "name",
-                    "order": 1,
-                    "resizable": true
-                },
-                {
-                    "headerName": "Submission date",
-                    "field": "submission_date",
-                    "order": 2,
-                    "resizable": true
-                },
-                {
-                    "headerName": "Scenario ID",
-                    "field": "scenario_id",
-                    "order": 3,
-                    "resizable": true
-                },
-                {
-                    "headerName": "Dimension Value ID",
-                    "field": "dim_val_id",
-                    "order": 4,
-                    "resizable": true
-                },
-                {
-                    "headerName": "Version",
-                    "field": "scenario_version_timestamp",
-                    "order": 5,
-                    "resizable": true
-                }
-            ],
-            "row_data": [
-                {
-                    "name": "PRIMARY"  
-                },
-                {
-                    "name": "OPTICAL Nov FY23 Forecast"    
-                }
+            "row_data": 
+            [
+            {"name": "PRIMARY"},
+            {"name": "OPTICAL Nov FY23 Forecast"}
             ]
         }
-    
 
-   
-}}
-            
+    }         
