@@ -1,4 +1,4 @@
-import testdata from '../testdata/deadlinedate.json'
+import testdata from '../testdata/deadlinedate-api.json'
 import { test, expect } from '../../common/fixtures/test-hook'
 import debug from 'debug';
 import { Utility } from '../../common/fixtures/utils'

@@ -1,7 +1,7 @@
 import { TestInfo } from "@playwright/test";
 import fs from "fs";
 import debug from 'debug';
-import loginData from "../testdata/LoginData.json";
+import users from "../testdata/users.json";
 
 export class Utility {
   private static readonly dir: string = "./test-results/logs/";
@@ -43,7 +43,7 @@ export class Utility {
 
   static async getTokenForUser(userId: string, request) {
     const authURL = process.env.authTokenURL;
-    const body = loginData.filter((user) => (user.userId === userId));
+    const body = users.filter((user) => (user.userId === userId));
     debug.log("Logging in with the user : " ,body[0]);
     const responseBody = await request.post(`${authURL}`, {
       data: body[0],
