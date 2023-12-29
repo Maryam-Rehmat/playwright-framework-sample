@@ -13,7 +13,7 @@
                 "dim_val_id":"1018",
                 "include_primary":"true"
             },
-            "include_primary":"false"
+            "exclude_primary":"false"
         }
        
     ,
@@ -54,18 +54,10 @@
             ],
             "row_data": [
                 {
-                    "name": "PRIMARY",
-                    "submission_date": null,
-                    "scenario_id": 10331700048212,
-                    "scenario_version_timestamp": null,
-                    "dim_val_id": 1100
+                    "name": "PRIMARY"  
                 },
                 {
-                    "name": "OPTICAL Nov FY23 Forecast",
-                    "submission_date": "Nov 13, 2023",
-                    "scenario_id": 11311702971190,
-                    "scenario_version_timestamp": 1702988130,
-                    "dim_val_id": 1018
+                    "name": "OPTICAL Nov FY23 Forecast"    
                 }
             ]
         }
