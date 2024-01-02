@@ -10,9 +10,6 @@ test.describe("Validating the baseline forecast Details @Regresion @Smoke @basel
   const testdata = testdatafile;
   const endpointURL = `${process.env.apiBaseURLUFM}${testdata.endpoint}`;
   debug.log(endpointURL);  
-  // const queryParam ={
-  //   ...testdatafile.queryParams,
-  // }
 
   test("Checking the baseline Details includes Primary forecast", async ({ context }) => {
     //get request for the baseline details includes Primary forecast
@@ -20,9 +17,7 @@ test.describe("Validating the baseline forecast Details @Regresion @Smoke @basel
       debug.log("Make a Get Request for baseline Details including Primary forecast");
        //API Request
       const apiResponse = await context.request.get(endpointURL,{params: {
-                "dim_id": testdata.queryParams.dim_id,
-                "classification_id": testdata.queryParams.classification_id,
-                "dim_val_id":testdata.queryParams.dim_val_id,
+                 ...testdatafile.queryParams,
                 "include_primary":testdata.include_primary}});
       //Extracting the response body     
       apiResponseBody = await apiResponse.json();
@@ -47,9 +42,7 @@ test("Checking the baseline Details excluding Primary forecast ", async ({ conte
       debug.log("Make a Get Request for baseline Details excluding Primary forecast");
        //API Request
       const apiResponse = await context.request.get(endpointURL,{params: {
-                "dim_id": testdata.queryParams.dim_id,
-                "classification_id": testdata.queryParams.classification_id,
-                "dim_val_id":testdata.queryParams.dim_val_id,
+               ...testdatafile.queryParams,
                 "include_primary":testdata.exclude_primary}});
 
       //Extracting the response body
