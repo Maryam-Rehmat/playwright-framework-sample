@@ -5,7 +5,6 @@ import { Utility } from '../../common/fixtures/utils'
 
 test.describe('Verify the @deadlinedate API @Regression @Smoke', () => {
   // variable used to store the filter id and use it across the tests under this describe
-
   let apiResponse, apiResponseBody;
   // API endpoint URL
   const endpointURL = `${process.env.apiBaseURLUFM}${testdata.endpoint}`
@@ -43,10 +42,7 @@ test.describe('Verify the @deadlinedate API @Regression @Smoke', () => {
       expect(actualDate).toStrictEqual(strExpdate);
 
     })
-
   })
-
-
 })
 
 

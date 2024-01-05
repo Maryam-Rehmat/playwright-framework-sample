@@ -1,6 +1,6 @@
 {
     "endpoint": "/scenario/forecast-date",
-    "expected_reponse":[
+    "expected_reponse": [
         "2023-12-14T00:00:00Z",
         "2024-01-24T00:00:00Z",
         "2024-02-24T00:00:00Z",
@@ -16,4 +16,3 @@
         "2024-12-24T00:00:00Z"
     ]
 }
-
