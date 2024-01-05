@@ -1,25 +1,22 @@
 {
     "endpoint": "/scenario/list-historicals",
-    "forecast_count":"12",
-    "sba_datas":[       
+    "forecast_count": "12",
+    "sba_datas": [
         {
-            "queryParams":
-            {
-                "dim_id":"10",
-                "classification_id":"12",
-                "dim_val_id":"1018"
+            "queryParams": {
+                "dim_id": "10",
+                "classification_id": "12",
+                "dim_val_id": "1018"
             },
-            "forecastname":"OPTICAL"
+            "forecastname": "OPTICAL"
         },
         {
-            "queryParams":
-            {
-                "dim_id":"10",
-                "classification_id":"12",
-                "dim_val_id":"1002"
+            "queryParams": {
+                "dim_id": "10",
+                "classification_id": "12",
+                "dim_val_id": "1002"
             },
-            "forecastname":"CMO"
+            "forecastname": "CMO"
         }
     ]
 }
-            
