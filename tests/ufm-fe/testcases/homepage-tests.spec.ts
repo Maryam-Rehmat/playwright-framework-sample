@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { LoginPage } from '../pages/login.page';
 
 
 test('login @regression @login', async ({page }) => {
@@ -18,5 +19,10 @@ test('login @regression @login', async ({page }) => {
   await expect(page.getByText('Unified Financial Model', { exact: true })).toBeVisible();
 
 });
+
+test('login using @credentials @Regression',async( { page } ) => {
+    const loginPage = new LoginPage(page)
+    await loginPage.login('LB-ibg-lob-opt');
+})
 
 

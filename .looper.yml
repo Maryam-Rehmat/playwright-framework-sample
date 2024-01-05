@@ -18,6 +18,9 @@ triggers:
   - manual:
       name: Run API Regression
       call: runUFMBeTests
+  - manual:
+      name: Run UFM UI Regression
+      call: runUFMFeTests
 
 parameters:
   - app: { type: string }
@@ -50,6 +53,12 @@ flows:
     try:
       - call: setup
       - ENV=$envr TEST=regression npm run tests:ufm-tests-be
+    finally:
+      - call: reporter
+  runUFMFeTests:
+    try:
+      - call: setup
+      - ENV=$envr TEST=regression npm run tests:ufm-tests-fe
     finally:
       - call: reporter
   runUFMSMokeTest:

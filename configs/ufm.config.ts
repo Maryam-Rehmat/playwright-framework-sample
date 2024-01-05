@@ -45,7 +45,7 @@ export default defineConfig({
     {
       name: 'ufm-be',
       dependencies: ['setup'],
-      testMatch: /ufm-be/,
+      testMatch: /ufm-be.*.spec.ts/,
       grep: [new RegExp(process.env.tag + "")],
       use: {
         extraHTTPHeaders: {
@@ -56,7 +56,7 @@ export default defineConfig({
     {
       name: 'ufm-fe',
       dependencies: ['setup'],
-      testMatch: /ufm-fe/,
+      testMatch: /ufm-fe.*.spec.ts/,
       grep: [new RegExp(process.env.tag + "")],
       use: {
         ...devices['Desktop Chrome'],

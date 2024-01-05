@@ -4,7 +4,9 @@ import debug from 'debug';
 import users from "../testdata/users.json";
 
 export class Utility {
+
   private static readonly dir: string = "./test-results/logs/";
+  
   private static createLogFileDir() {
     if (!fs.existsSync(this.dir)) {
       fs.mkdirSync(this.dir);
