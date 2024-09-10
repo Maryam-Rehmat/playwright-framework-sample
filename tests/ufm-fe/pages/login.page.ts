@@ -14,7 +14,7 @@ export class LoginPage {
   constructor(page: Page) {
     this.page = page;
     this.txtPassword = page.getByPlaceholder("Password");
-    this.txtUserName = page.getByPlaceholder("User ID (e.g. wm5p4rk)");
+    this.txtUserName = page.getByPlaceholder("User ID");
     this.drpCountry = page.locator("#domainName");
     this.drpLocation = page.locator("#BU");
     this.btnSignIn = page.getByText("SIGN IN");
@@ -38,7 +38,7 @@ export class LoginPage {
       raw_ufm_secrets = fs.readFileSync(process.env.ufm_secrets+"", 'utf8');
     }
     const ufm_secrets = JSON.parse(raw_ufm_secrets);
-    return ufm_secrets['labAccountPassword']
+    return ufm_secrets['labAccountPass']
     
   }
 
