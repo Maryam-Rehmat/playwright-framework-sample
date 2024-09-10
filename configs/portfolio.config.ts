@@ -20,7 +20,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: process.env.CI ?[['html'],['@lab/testburst-playwright-js-reporter'] ]:"html",
+  reporter: process.env.CI ?[['html'],['@labs/testburst-playwright-js-reporter'] ]:"html",
   //reporter: "html",
   //reporter: 'allure-playwright',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -40,23 +40,12 @@ export default defineConfig({
   projects: [
     {
       name: 'setup',
-      testMatch: /auth-setup\.ts/,
+      testMatch: /authentication-setup\.ts/,
     },
     {
-      name: 'ufm-be',
+      name: 'portfolio-fe',
       dependencies: ['setup'],
-      testMatch: /ufm-be.*.spec.ts/,
-      grep: [new RegExp(process.env.tag + "")],
-      use: {
-        extraHTTPHeaders: {
-          "Authorization": `Bearer ${process.env.token}`
-        }
-      }
-    },
-    {
-      name: 'ufm-fe',
-      dependencies: ['setup'],
-      testMatch: /ufm-fe.*.spec.ts/,
+      testMatch: /portfolio-fe.*.spec.ts/,
       grep: [new RegExp(process.env.tag + "")],
       use: {
         ...devices['Desktop Chrome'],

@@ -1,178 +1,18 @@
 [
   {
-    "userId": "LB-ibg-lob-sc-fc",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "SUPPLYCHAIN-FULFILMENT CENTERS",
-    "displayName": "IBG-UFM-LOBInputter SUPPLYCHAIN-FULFILMENT CENTERS",
+    "userId": "LB-ibg-sc-fc",
+    "givenName": "IBG-UFM-LOBInput",
+    "familyName": "SUPPLYCHAIN-FULFILMENT",
+    "displayName": "IBG-UFM-LOBInputter SUPPLYCHAIN-FULFILMENT",
     "mail": "",
     "userPrincipalName": "LB-ibg-lob-sc-fc"
   },
   {
-    "userId": "LB-ibg-lob-opt-rx",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "OPTICAL-RX",
-    "displayName": "IBG-UFM-LOBInputter OPTICAL-RX",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-opt-rx"
-  },
-  {
-    "userId": "LB-ibg-lob-opt",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "OPTICAL",
-    "displayName": "IBG-UFM-LOBInputter OPTICAL",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-opt"
-  },
-  {
-    "userId": "LB-ibg-lob-wmt",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "WMT",
-    "displayName": "IBG-UFM-LOBInputter WMT",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-wmt"
-  },
-  {
-    "userId": "LB-ibg-lob-sdoh-cmo",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "SDOH-CMO",
-    "displayName": "IBG-UFM-LOBInputter SDOH-CMO",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-sdoh-cmo"
-  },
-  {
-    "userId": "LB-ibg-lob-inscrt-mp",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "INSTACART-MARKETPLACE",
-    "displayName": "IBG-UFM-LOBInputter INSTACART-MARKETPLACE",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-inscrt-mp"
-  },
-  {
-    "userId": "LB-ibg-lob-mrops",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "SUPPLIES AND M&R STORE OPS",
-    "displayName": "IBG-UFM-LOBInputter SUPPLIES AND M&R STORE OPS",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-mrops"
-  },
-  {
-    "userId": "LB-ibg-lob-ho",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "HOME OFFICE",
-    "displayName": "IBG-UFM-LOBInputter HOME OFFICE",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-ho"
-  },
-  {
-    "userId": "LB-ibg-lob-opr-fl",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "OPERATIONS-FUEL",
-    "displayName": "IBG-UFM-LOBInputter OPERATIONS-FUEL",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-opr-fl"
-  },
-  {
-    "userId": "LB-ibg-lob-re",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "REAL ESTATE",
-    "displayName": "IBG-UFM-LOBInputter REAL ESTATE",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-re"
-  },
-  {
-    "userId": "LB-ibg-lob-ecom-cc",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "CUSTOMER CONTACTS-ECOM",
-    "displayName": "IBG-UFM-LOBInputter CUSTOMER CONTACTS-ECOM",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-ecom-cc"
-  },
-  {
-    "userId": "LB-ibg-ba-sc-hw",
-    "givenName": "IBG-UFM-BAReviewer",
-    "familyName": "SUPPLYCHAIN-HW",
-    "displayName": "IBG-UFM-BAReviewer SUPPLYCHAIN-HW",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-ba-sc-hw"
-  },
-  {
-    "userId": "LB-ibg-ba-cr",
-    "givenName": "IBG-UFM-BAReviewer",
-    "familyName": "CUSTOMER AND REVENUE",
-    "displayName": "IBG-UFM-BAReviewer CUSTOMER AND REVENUE",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-ba-cr"
-  },
-  {
-    "userId": "LB-ibg-ba-lmd-merch",
-    "givenName": "IBG-UFM-BAReviewer",
-    "familyName": "LMD-MERCHANDISING",
-    "displayName": "IBG-UFM-BAReviewer LMD-MERCHANDISING",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-ba-lmd-merch"
-  },
-  {
-    "userId": "LB-ibg-ba-re",
-    "givenName": "IBG-UFM-BAReviewer",
-    "familyName": "REAL ESTATE",
-    "displayName": "IBG-UFM-BAReviewer REAL ESTATE",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-ba-re"
-  },
-  {
-    "userId": "LB-ibg-ba-opr-ecom",
-    "givenName": "IBG-UFM-BAReviewer",
-    "familyName": "OPERATIONS-ECOMMERCE",
-    "displayName": "IBG-UFM-BAReviewer OPERATIONS-ECOMMERCE",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-ba-opr-ecom"
-  },
-  {
-    "userId": "LB-ibg-seg",
-    "givenName": "IBG-UFM-Segment",
-    "familyName": "CONSOLIDATOR",
-    "displayName": "IBG-UFM-Segment CONSOLIDATOR",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-seg"
-  },
-  {
-    "userId": "LB-ibg-seg-cmn",
-    "givenName": "IBG-UFM-Segment",
-    "familyName": "COMMON-CONSOLIDATOR",
-    "displayName": "IBG-UFM-Segment COMMON-CONSOLIDATOR",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-seg-cmn"
-  },
-  {
-    "userId": "LB-ibg-lob-cmn",
-    "givenName": "IBG-UFM-LOBInputter",
-    "familyName": "COMMON-LOB",
-    "displayName": "IBG-UFM-LOBInputter COMMON-LOB",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-lob-cmn"
-  },
-  {
-    "userId": "LB-ibg-ba-cmn",
-    "givenName": "IBG-UFM-BAReviewer",
-    "familyName": "COMMON-BA",
-    "displayName": "IBG-UFM-BAReviewer COMMON-BA",
-    "mail": "",
-    "userPrincipalName": "LB-ibg-ba-cmn"
-  },
-  {
-    "userId": "s0g0fhn",
-    "displayName": "Santhoshkumar Govindasamy",
-    "givenName": "Santhoshkumar",
-    "familyName": "Govindasamy",
-    "mail": "Santhoshkumar.Govindasamy@walmart.com",
-    "userPrincipalName": "s0g0fhn"
-  },
-  {
-    "userId": "l0p07dx",
-    "displayName": "Lokesh Patni",
-    "givenName": "Lokesh",
-    "familyName": "Patni",
-    "mail": "lokesh.patni@walmart.com",
-    "userPrincipalName": "l0p07dx"
+    "userId": "vn501aa8",
+    "displayName": "Maryam Rehmat",
+    "givenName": "Maryam",
+    "familyName": "Rehmat",
+    "mail": "maryam.rehmat0@example.com",
+    "userPrincipalName": "vn501aa8"
   }
 ]
